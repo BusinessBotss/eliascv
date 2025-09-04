@@ -17,6 +17,23 @@
             --hover-scale: 1.05;
         }
 
+        /* Light Mode Variables */
+        body.light-mode {
+            --bg-primary: #ffffff;
+            --text-primary: #000000;
+            --text-secondary: #00000080;
+            --glass-bg: #f8f9facc;
+            --divider: #00000020;
+        }
+
+        body.light-mode .matrix-bg {
+            opacity: 0.05;
+        }
+
+        body.light-mode .matrix-line {
+            background: linear-gradient(to bottom, transparent, #333333, transparent);
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -62,6 +79,39 @@
             10% { opacity: 1; }
             90% { opacity: 1; }
             100% { transform: translateY(100vh); opacity: 0; }
+        }
+
+        /* Theme Toggle */
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border-radius: 25px;
+            padding: 8px;
+            border: 1px solid var(--divider);
+        }
+
+        .theme-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            padding: 8px 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 14px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .theme-btn:hover {
+            background: var(--divider);
+            color: var(--text-primary);
         }
 
         /* Language Selector */
@@ -464,6 +514,14 @@
                 margin: 20px auto;
                 justify-content: center;
             }
+
+            .theme-toggle {
+                position: relative;
+                top: auto;
+                left: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
         }
 
         /* Animations */
@@ -491,6 +549,14 @@
 <body>
     <!-- Matrix Background -->
     <div class="matrix-bg" id="matrixBg"></div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button class="theme-btn" onclick="toggleTheme()" id="themeToggle">
+            <span id="themeIcon">☀️</span>
+            <span id="themeText" data-key="light_mode">Modo Día</span>
+        </button>
+    </div>
 
     <!-- Language Selector -->
     <div class="lang-selector">
@@ -774,7 +840,9 @@
                 achievement4_title: "Multilingüe",
                 achievement4_desc: "Capacidad de trabajar en 5 idiomas diferentes",
                 download_cv: "Descargar CV en PDF",
-                footer_text: "© 2025 Elias Joel Burgos Perez. Todos los derechos reservados."
+                footer_text: "© 2025 Elias Joel Burgos Perez. Todos los derechos reservados.",
+                light_mode: "Modo Día",
+                dark_mode: "Modo Noche"
             },
             en: {
                 name: "Elias Joel Burgos Perez",
@@ -812,7 +880,9 @@
                 achievement4_title: "Multilingual",
                 achievement4_desc: "Ability to work in 5 different languages",
                 download_cv: "Download PDF Resume",
-                footer_text: "© 2025 Elias Joel Burgos Perez. All rights reserved."
+                footer_text: "© 2025 Elias Joel Burgos Perez. All rights reserved.",
+                light_mode: "Light Mode",
+                dark_mode: "Dark Mode"
             },
             fr: {
                 name: "Elias Joel Burgos Perez",
@@ -850,7 +920,9 @@
                 achievement4_title: "Multilingue",
                 achievement4_desc: "Capacité de travailler en 5 langues différentes",
                 download_cv: "Télécharger CV PDF",
-                footer_text: "© 2025 Elias Joel Burgos Perez. Tous droits réservés."
+                footer_text: "© 2025 Elias Joel Burgos Perez. Tous droits réservés.",
+                light_mode: "Mode Jour",
+                dark_mode: "Mode Nuit"
             },
             de: {
                 name: "Elias Joel Burgos Perez",
@@ -888,7 +960,9 @@
                 achievement4_title: "Mehrsprachig",
                 achievement4_desc: "Fähigkeit, in 5 verschiedenen Sprachen zu arbeiten",
                 download_cv: "Lebenslauf PDF herunterladen",
-                footer_text: "© 2025 Elias Joel Burgos Perez. Alle Rechte vorbehalten."
+                footer_text: "© 2025 Elias Joel Burgos Perez. Alle Rechte vorbehalten.",
+                light_mode: "Heller Modus",
+                dark_mode: "Dunkler Modus"
             },
             it: {
                 name: "Elias Joel Burgos Perez",
@@ -926,7 +1000,9 @@
                 achievement4_title: "Multilingue",
                 achievement4_desc: "Capacità di lavorare in 5 lingue diverse",
                 download_cv: "Scarica CV PDF",
-                footer_text: "© 2025 Elias Joel Burgos Perez. Tutti i diritti riservati."
+                footer_text: "© 2025 Elias Joel Burgos Perez. Tutti i diritti riservati.",
+                light_mode: "Modalità Chiara",
+                dark_mode: "Modalità Scura"
             }
         };
 
@@ -944,6 +1020,32 @@
                 line.style.animationDelay = Math.random() * 8 + 's';
                 line.style.animationDuration = (8 + Math.random() * 4) + 's';
                 matrixBg.appendChild(line);
+            }
+        }
+
+        // Theme Toggle Function
+        function toggleTheme() {
+            const body = document.body;
+            const themeIcon = document.getElementById('themeIcon');
+            const themeText = document.getElementById('themeText');
+            
+            body.classList.toggle('light-mode');
+            
+            if (body.classList.contains('light-mode')) {
+                themeIcon.textContent = '🌙';
+                themeText.setAttribute('data-key', 'dark_mode');
+                localStorage.setItem('theme', 'light');
+            } else {
+                themeIcon.textContent = '☀️';
+                themeText.setAttribute('data-key', 'light_mode');
+                localStorage.setItem('theme', 'dark');
+            }
+            
+            // Update text based on current language
+            const langData = translations[currentLanguage];
+            const key = themeText.getAttribute('data-key');
+            if (langData[key]) {
+                themeText.textContent = langData[key];
             }
         }
 
@@ -1003,6 +1105,15 @@
             initMatrixBackground();
             initScrollAnimations();
             
+            // Load saved theme
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'light') {
+                document.body.classList.add('light-mode');
+                document.getElementById('themeIcon').textContent = '🌙';
+                document.getElementById('themeText').setAttribute('data-key', 'dark_mode');
+                document.getElementById('themeText').textContent = translations[currentLanguage]['dark_mode'];
+            }
+            
             // Animate language progress bars
             setTimeout(() => {
                 document.querySelectorAll('.language-progress').forEach(bar => {
@@ -1029,5 +1140,5 @@
             });
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'979d4c6e1168030f',t:'MTc1Njk4NjkzMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'979d60ccd330030f',t:'MTc1Njk4Nzc2OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
