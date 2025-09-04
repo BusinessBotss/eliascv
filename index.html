@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elias Joel Burgos Perez - AI Specialist & Graphic Designer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #000000;
+            --text-primary: #ffffff;
+            --text-secondary: #ffffff80;
+            --accent-start: #6bf21d;
+            --accent-end: #00ffe1;
+            --glass-bg: #111111cc;
+            --divider: #ffffff20;
+            --hover-scale: 1.05;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Matrix Background Effect */
+        .matrix-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            opacity: 0.1;
+        }
+
+        .matrix-line {
+            position: absolute;
+            width: 2px;
+            height: 100px;
+            background: linear-gradient(to bottom, transparent, var(--accent-start), transparent);
+            animation: matrix-fall 8s linear infinite;
+        }
+
+        @keyframes matrix-fall {
+            0% { transform: translateY(-100px); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(100vh); opacity: 0; }
+        }
+
+        /* Language Selector */
+        .lang-selector {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            gap: 8px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border-radius: 25px;
+            padding: 8px;
+            border: 1px solid var(--divider);
+        }
+
+        .lang-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            padding: 8px 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .lang-btn.active {
+            background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+            color: #000;
+            transform: scale(1.05);
+        }
+
+        .lang-btn:hover:not(.active) {
+            background: var(--divider);
+            color: var(--text-primary);
+        }
+
+        /* Header Section */
+        .header {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 2rem;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid transparent;
+            background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+            padding: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(107, 242, 29, 0.3);
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            background: var(--bg-primary);
+        }
+
+        .hero-content h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-content .role {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            font-weight: 500;
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            color: var(--accent-start);
+            transform: translateY(-2px);
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 80px 0;
+            position: relative;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-divider {
+            height: 1px;
+            background: var(--divider);
+            margin: 80px 0;
+        }
+
+        /* Profile Section */
+        .profile-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+
+        /* Experience Timeline */
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--accent-start), var(--accent-end));
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 50px;
+            width: 50%;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            padding-right: 40px;
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+            padding-left: 40px;
+        }
+
+        .timeline-content {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--divider);
+            border-radius: 15px;
+            padding: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .timeline-content:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-start);
+        }
+
+        .timeline-dot {
+            position: absolute;
+            top: 20px;
+            width: 15px;
+            height: 15px;
+            background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+            border-radius: 50%;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-dot {
+            right: -7px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-dot {
+            left: -7px;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 3rem;
+        }
+
+        .skill-category {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--divider);
+            border-radius: 15px;
+            padding: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-start);
+        }
+
+        .skill-category h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--accent-start);
+        }
+
+        .skill-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-pill {
+            background: var(--divider);
+            color: var(--text-primary);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .skill-pill:hover {
+            background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+            color: #000;
+            transform: scale(1.05);
+        }
+
+        /* Languages Section */
+        .languages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 2rem;
+        }
+
+        .language-item {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--divider);
+            border-radius: 15px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .language-item:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent-start);
+        }
+
+        .language-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .language-bar {
+            height: 8px;
+            background: var(--divider);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .language-progress {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-start), var(--accent-end));
+            border-radius: 4px;
+            transition: width 1s ease;
+        }
+
+        /* Achievements Section */
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 3rem;
+        }
+
+        .achievement-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--divider);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .achievement-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            border-color: var(--accent-start);
+            box-shadow: 0 20px 40px rgba(107, 242, 29, 0.1);
+        }
+
+        .achievement-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 60px 0;
+            text-align: center;
+            border-top: 1px solid var(--divider);
+        }
+
+        .download-btn {
+            background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+            color: #000;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+
+        .download-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(107, 242, 29, 0.3);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                left: 0 !important;
+                padding-left: 50px !important;
+                padding-right: 0 !important;
+                text-align: left !important;
+            }
+
+            .timeline-dot {
+                left: 13px !important;
+                right: auto !important;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .lang-selector {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Matrix Background -->
+    <div class="matrix-bg" id="matrixBg"></div>
+
+    <!-- Language Selector -->
+    <div class="lang-selector">
+        <button class="lang-btn active" onclick="switchLanguage('es')" data-lang="es">🇪🇸 ES</button>
+        <button class="lang-btn" onclick="switchLanguage('en')" data-lang="en">🇺🇸 EN</button>
+        <button class="lang-btn" onclick="switchLanguage('fr')" data-lang="fr">🇫🇷 FR</button>
+        <button class="lang-btn" onclick="switchLanguage('de')" data-lang="de">🇩🇪 DE</button>
+        <button class="lang-btn" onclick="switchLanguage('it')" data-lang="it">🇮🇹 IT</button>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-image">
+                    <img src="https://res.cloudinary.com/dxhef6dju/image/upload/v1756986274/IMG_9461_2_l1qw8s.jpg" alt="Elias Joel Burgos Perez" onerror="this.style.display='none';">
+                </div>
+                <h1 data-key="name">Elias Joel Burgos Perez</h1>
+                <p class="role" data-key="role">AI Specialist & Graphic Designer</p>
+                <div class="contact-info">
+                    <a href="mailto:ebcliicks@gmail.com" class="contact-item">
+                        <span>📧</span>
+                        <span>ebcliicks@gmail.com</span>
+                    </a>
+                    <a href="https://wa.me/34644075065" class="contact-item" target="_blank">
+                        <span>📱</span>
+                        <span>+34 644 075 065</span>
+                    </a>
+                    <span class="contact-item">
+                        <span>📍</span>
+                        <span data-key="location">Palma de Mallorca</span>
+                    </span>
+                </div>
+                <div class="social-icons">
+                    <button class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2" type="button" onclick="window.open('https://facebook.com', '_blank')">
+                        Facebook
+                    </button>
+                    <button class="text-white bg-gradient-to-r from-red-500 via-red-600 to-red-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2" type="button" onclick="window.open('https://youtube.com', '_blank')">
+                        YouTube
+                    </button>
+                    <button class="text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-400/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2" type="button" onclick="window.open('https://twitter.com', '_blank')">
+                        Twitter
+                    </button>
+                    <button class="text-white bg-gradient-to-r from-pink-500 via-pink-600 to-pink-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2" type="button" onclick="window.open('https://instagram.com/imtimeless', '_blank')">
+                        Instagram
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title" data-key="profile_title">Perfil Profesional</h2>
+            <div class="profile-content">
+                <p data-key="profile_text">
+                    Fundador de Business Bots, empresa de servicios B2B potenciados por IA con sede en Palma de Mallorca. 
+                    Especializado en combinar ingeniería de prompts y diseño gráfico para desarrollar agentes de IA personalizados 
+                    que ofrecen respuestas precisas y alineadas con el negocio, integrando identidad visual y automatización.
+                    <br><br>
+                    Con 6 años de experiencia en diseño gráfico y más de 2 años en IA aplicada, aporto una combinación única 
+                    de creatividad y tecnología. Autodidacta en ecosistemas avanzados de IA y frameworks de diseño, 
+                    entrego soluciones innovadoras, escalables y altamente personalizadas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Experience Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title" data-key="experience_title">Experiencia Profesional</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 data-key="exp1_title">Consultoría en IA y Automatización</h3>
+                        <p class="timeline-period" data-key="exp1_period">Freelance & Proyectos B2B | 2022 - Presente</p>
+                        <ul data-key="exp1_tasks">
+                            <li>Desarrollo y optimización de prompts para modelos de IA generativa</li>
+                            <li>Creación de agentes conversacionales personalizados</li>
+                            <li>Implementación de flujos de automatización</li>
+                            <li>Diseño de dashboards e interfaces digitales</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 data-key="exp2_title">Diseño Gráfico y Branding</h3>
+                        <p class="timeline-period" data-key="exp2_period">Diversos Clientes | 2017 - 2021</p>
+                        <ul data-key="exp2_tasks">
+                            <li>Diseño de identidades visuales para marcas locales e internacionales</li>
+                            <li>Producción de contenido gráfico y multimedia</li>
+                            <li>Adaptación de assets visuales para múltiples plataformas</li>
+                            <li>Colaboración con equipos de comunicación y marketing</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Skills Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title" data-key="skills_title">Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 data-key="ai_skills">Inteligencia Artificial</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">GPT</span>
+                        <span class="skill-pill">DALL·E</span>
+                        <span class="skill-pill">Prompt Engineering</span>
+                        <span class="skill-pill">Google Colab</span>
+                        <span class="skill-pill">Custom AI Agents</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 data-key="design_skills">Diseño</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Photoshop</span>
+                        <span class="skill-pill">Illustrator</span>
+                        <span class="skill-pill">InDesign</span>
+                        <span class="skill-pill">Canva</span>
+                        <span class="skill-pill">Branding</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 data-key="dev_skills">Desarrollo Frontend</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">HTML</span>
+                        <span class="skill-pill">CSS</span>
+                        <span class="skill-pill">JavaScript</span>
+                        <span class="skill-pill">VSCode</span>
+                        <span class="skill-pill">GitHub</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 data-key="automation_skills">Automatización</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Make</span>
+                        <span class="skill-pill">n8n</span>
+                        <span class="skill-pill">Google Drive</span>
+                        <span class="skill-pill">CRM Integration</span>
+                        <span class="skill-pill">Workflows</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 data-key="social_skills">Social Media</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">TikTok</span>
+                        <span class="skill-pill">Instagram</span>
+                        <span class="skill-pill">Facebook</span>
+                        <span class="skill-pill">LinkedIn</span>
+                        <span class="skill-pill">Content Creation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Languages Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title" data-key="languages_title">Idiomas</h2>
+            <div class="languages-grid">
+                <div class="language-item">
+                    <div class="language-header">
+                        <span><strong data-key="spanish">Español</strong></span>
+                        <span data-key="native">Nativo</span>
+                    </div>
+                    <div class="language-bar">
+                        <div class="language-progress" style="width: 100%"></div>
+                    </div>
+                </div>
+                <div class="language-item">
+                    <div class="language-header">
+                        <span><strong data-key="english">Inglés</strong></span>
+                        <span data-key="advanced">Avanzado</span>
+                    </div>
+                    <div class="language-bar">
+                        <div class="language-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="language-item">
+                    <div class="language-header">
+                        <span><strong data-key="french">Francés</strong></span>
+                        <span data-key="intermediate">Intermedio</span>
+                    </div>
+                    <div class="language-bar">
+                        <div class="language-progress" style="width: 65%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Achievements Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title" data-key="achievements_title">Logros Destacados</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">🤖</div>
+                    <h3 data-key="achievement1_title">Business Bots</h3>
+                    <p data-key="achievement1_desc">Fundación de empresa especializada en soluciones de IA para B2B</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🎨</div>
+                    <h3 data-key="achievement2_title">6 Años de Diseño</h3>
+                    <p data-key="achievement2_desc">Experiencia consolidada en diseño gráfico y branding</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">⚡</div>
+                    <h3 data-key="achievement3_title">Automatización</h3>
+                    <p data-key="achievement3_desc">Implementación de workflows que optimizan procesos empresariales</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🌐</div>
+                    <h3 data-key="achievement4_title">Multilingüe</h3>
+                    <p data-key="achievement4_desc">Capacidad de trabajar en 5 idiomas diferentes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <button class="download-btn" onclick="downloadPDF()" data-key="download_cv">Descargar CV en PDF</button>
+            <p data-key="footer_text">© 2025 Elias Joel Burgos Perez. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Translations object
+        const translations = {
+            es: {
+                name: "Elias Joel Burgos Perez",
+                role: "AI Specialist & Graphic Designer",
+                location: "Palma de Mallorca",
+                profile_title: "Perfil Profesional",
+                profile_text: "Fundador de Business Bots, empresa de servicios B2B potenciados por IA con sede en Palma de Mallorca. Especializado en combinar ingeniería de prompts y diseño gráfico para desarrollar agentes de IA personalizados que ofrecen respuestas precisas y alineadas con el negocio, integrando identidad visual y automatización.<br><br>Con 6 años de experiencia en diseño gráfico y más de 2 años en IA aplicada, aporto una combinación única de creatividad y tecnología. Autodidacta en ecosistemas avanzados de IA y frameworks de diseño, entrego soluciones innovadoras, escalables y altamente personalizadas.",
+                experience_title: "Experiencia Profesional",
+                exp1_title: "Consultoría en IA y Automatización",
+                exp1_period: "Freelance & Proyectos B2B | 2022 - Presente",
+                exp1_tasks: "<li>Desarrollo y optimización de prompts para modelos de IA generativa</li><li>Creación de agentes conversacionales personalizados</li><li>Implementación de flujos de automatización</li><li>Diseño de dashboards e interfaces digitales</li>",
+                exp2_title: "Diseño Gráfico y Branding",
+                exp2_period: "Diversos Clientes | 2017 - 2021",
+                exp2_tasks: "<li>Diseño de identidades visuales para marcas locales e internacionales</li><li>Producción de contenido gráfico y multimedia</li><li>Adaptación de assets visuales para múltiples plataformas</li><li>Colaboración con equipos de comunicación y marketing</li>",
+                skills_title: "Habilidades Técnicas",
+                ai_skills: "Inteligencia Artificial",
+                design_skills: "Diseño",
+                dev_skills: "Desarrollo Frontend",
+                automation_skills: "Automatización",
+                social_skills: "Social Media",
+                languages_title: "Idiomas",
+                spanish: "Español",
+                english: "Inglés",
+                french: "Francés",
+                native: "Nativo",
+                advanced: "Avanzado",
+                intermediate: "Intermedio",
+                achievements_title: "Logros Destacados",
+                achievement1_title: "Business Bots",
+                achievement1_desc: "Fundación de empresa especializada en soluciones de IA para B2B",
+                achievement2_title: "6 Años de Diseño",
+                achievement2_desc: "Experiencia consolidada en diseño gráfico y branding",
+                achievement3_title: "Automatización",
+                achievement3_desc: "Implementación de workflows que optimizan procesos empresariales",
+                achievement4_title: "Multilingüe",
+                achievement4_desc: "Capacidad de trabajar en 5 idiomas diferentes",
+                download_cv: "Descargar CV en PDF",
+                footer_text: "© 2025 Elias Joel Burgos Perez. Todos los derechos reservados."
+            },
+            en: {
+                name: "Elias Joel Burgos Perez",
+                role: "AI Specialist & Graphic Designer",
+                location: "Palma de Mallorca",
+                profile_title: "Professional Profile",
+                profile_text: "Founder of Business Bots, an AI-powered B2B services company based in Palma de Mallorca. Specialized in combining prompt engineering and graphic design to develop custom AI agents that deliver accurate, business-aligned responses while integrating visual identity and automation.<br><br>With 6 years of experience in graphic design and 2+ years in applied AI, I bring a unique blend of creativity and technology. Self-taught in advanced AI ecosystems and design frameworks, I deliver innovative, scalable, and highly personalized solutions.",
+                experience_title: "Professional Experience",
+                exp1_title: "AI & Automation Consulting",
+                exp1_period: "Freelance & B2B Projects | 2022 - Present",
+                exp1_tasks: "<li>Development and optimization of prompts for generative AI models</li><li>Creation of custom conversational agents</li><li>Implementation of automation workflows</li><li>Design of dashboards and digital interfaces</li>",
+                exp2_title: "Graphic Design & Branding",
+                exp2_period: "Various Clients | 2017 - 2021",
+                exp2_tasks: "<li>Design of visual identities for local and international brands</li><li>Production of graphic and multimedia content</li><li>Adaptation of visual assets for multiple platforms</li><li>Collaboration with communication and marketing teams</li>",
+                skills_title: "Technical Skills",
+                ai_skills: "Artificial Intelligence",
+                design_skills: "Design",
+                dev_skills: "Frontend Development",
+                automation_skills: "Automation",
+                social_skills: "Social Media",
+                languages_title: "Languages",
+                spanish: "Spanish",
+                english: "English",
+                french: "French",
+                native: "Native",
+                advanced: "Advanced",
+                intermediate: "Intermediate",
+                achievements_title: "Key Achievements",
+                achievement1_title: "Business Bots",
+                achievement1_desc: "Founded company specialized in AI solutions for B2B",
+                achievement2_title: "6 Years of Design",
+                achievement2_desc: "Consolidated experience in graphic design and branding",
+                achievement3_title: "Automation",
+                achievement3_desc: "Implementation of workflows that optimize business processes",
+                achievement4_title: "Multilingual",
+                achievement4_desc: "Ability to work in 5 different languages",
+                download_cv: "Download PDF Resume",
+                footer_text: "© 2025 Elias Joel Burgos Perez. All rights reserved."
+            },
+            fr: {
+                name: "Elias Joel Burgos Perez",
+                role: "Spécialiste IA & Designer Graphique",
+                location: "Palma de Majorque",
+                profile_title: "Profil Professionnel",
+                profile_text: "Fondateur de Business Bots, une entreprise de services B2B alimentée par l'IA basée à Palma de Majorque. Spécialisé dans la combinaison de l'ingénierie de prompts et du design graphique pour développer des agents IA personnalisés qui fournissent des réponses précises et alignées sur l'entreprise, intégrant identité visuelle et automatisation.<br><br>Avec 6 ans d'expérience en design graphique et plus de 2 ans en IA appliquée, j'apporte un mélange unique de créativité et de technologie. Autodidacte dans les écosystèmes IA avancés et les frameworks de design, je livre des solutions innovantes, évolutives et hautement personnalisées.",
+                experience_title: "Expérience Professionnelle",
+                exp1_title: "Conseil en IA et Automatisation",
+                exp1_period: "Freelance & Projets B2B | 2022 - Présent",
+                exp1_tasks: "<li>Développement et optimisation de prompts pour modèles IA génératifs</li><li>Création d'agents conversationnels personnalisés</li><li>Implémentation de flux d'automatisation</li><li>Conception de tableaux de bord et interfaces numériques</li>",
+                exp2_title: "Design Graphique & Branding",
+                exp2_period: "Divers Clients | 2017 - 2021",
+                exp2_tasks: "<li>Conception d'identités visuelles pour marques locales et internationales</li><li>Production de contenu graphique et multimédia</li><li>Adaptation d'assets visuels pour multiples plateformes</li><li>Collaboration avec équipes de communication et marketing</li>",
+                skills_title: "Compétences Techniques",
+                ai_skills: "Intelligence Artificielle",
+                design_skills: "Design",
+                dev_skills: "Développement Frontend",
+                automation_skills: "Automatisation",
+                social_skills: "Médias Sociaux",
+                languages_title: "Langues",
+                spanish: "Espagnol",
+                english: "Anglais",
+                french: "Français",
+                native: "Natif",
+                advanced: "Avancé",
+                intermediate: "Intermédiaire",
+                achievements_title: "Réalisations Clés",
+                achievement1_title: "Business Bots",
+                achievement1_desc: "Fondation d'entreprise spécialisée en solutions IA pour B2B",
+                achievement2_title: "6 Ans de Design",
+                achievement2_desc: "Expérience consolidée en design graphique et branding",
+                achievement3_title: "Automatisation",
+                achievement3_desc: "Implémentation de workflows qui optimisent les processus d'entreprise",
+                achievement4_title: "Multilingue",
+                achievement4_desc: "Capacité de travailler en 5 langues différentes",
+                download_cv: "Télécharger CV PDF",
+                footer_text: "© 2025 Elias Joel Burgos Perez. Tous droits réservés."
+            },
+            de: {
+                name: "Elias Joel Burgos Perez",
+                role: "KI-Spezialist & Grafikdesigner",
+                location: "Palma de Mallorca",
+                profile_title: "Berufsprofil",
+                profile_text: "Gründer von Business Bots, einem KI-gestützten B2B-Dienstleistungsunternehmen mit Sitz in Palma de Mallorca. Spezialisiert auf die Kombination von Prompt-Engineering und Grafikdesign zur Entwicklung maßgeschneiderter KI-Agenten, die präzise, geschäftsausgerichtete Antworten liefern und dabei visuelle Identität und Automatisierung integrieren.<br><br>Mit 6 Jahren Erfahrung im Grafikdesign und über 2 Jahren in angewandter KI bringe ich eine einzigartige Mischung aus Kreativität und Technologie mit. Autodidakt in fortgeschrittenen KI-Ökosystemen und Design-Frameworks, liefere ich innovative, skalierbare und hochpersonalisierte Lösungen.",
+                experience_title: "Berufserfahrung",
+                exp1_title: "KI & Automatisierungsberatung",
+                exp1_period: "Freelance & B2B-Projekte | 2022 - Heute",
+                exp1_tasks: "<li>Entwicklung und Optimierung von Prompts für generative KI-Modelle</li><li>Erstellung maßgeschneiderter Konversationsagenten</li><li>Implementierung von Automatisierungs-Workflows</li><li>Design von Dashboards und digitalen Schnittstellen</li>",
+                exp2_title: "Grafikdesign & Branding",
+                exp2_period: "Verschiedene Kunden | 2017 - 2021",
+                exp2_tasks: "<li>Design visueller Identitäten für lokale und internationale Marken</li><li>Produktion grafischer und multimedialer Inhalte</li><li>Anpassung visueller Assets für mehrere Plattformen</li><li>Zusammenarbeit mit Kommunikations- und Marketing-Teams</li>",
+                skills_title: "Technische Fähigkeiten",
+                ai_skills: "Künstliche Intelligenz",
+                design_skills: "Design",
+                dev_skills: "Frontend-Entwicklung",
+                automation_skills: "Automatisierung",
+                social_skills: "Social Media",
+                languages_title: "Sprachen",
+                spanish: "Spanisch",
+                english: "Englisch",
+                french: "Französisch",
+                native: "Muttersprache",
+                advanced: "Fortgeschritten",
+                intermediate: "Mittelstufe",
+                achievements_title: "Wichtige Erfolge",
+                achievement1_title: "Business Bots",
+                achievement1_desc: "Gründung eines auf KI-Lösungen für B2B spezialisierten Unternehmens",
+                achievement2_title: "6 Jahre Design",
+                achievement2_desc: "Konsolidierte Erfahrung in Grafikdesign und Branding",
+                achievement3_title: "Automatisierung",
+                achievement3_desc: "Implementierung von Workflows, die Geschäftsprozesse optimieren",
+                achievement4_title: "Mehrsprachig",
+                achievement4_desc: "Fähigkeit, in 5 verschiedenen Sprachen zu arbeiten",
+                download_cv: "Lebenslauf PDF herunterladen",
+                footer_text: "© 2025 Elias Joel Burgos Perez. Alle Rechte vorbehalten."
+            },
+            it: {
+                name: "Elias Joel Burgos Perez",
+                role: "Specialista IA & Graphic Designer",
+                location: "Palma di Maiorca",
+                profile_title: "Profilo Professionale",
+                profile_text: "Fondatore di Business Bots, un'azienda di servizi B2B potenziata dall'IA con sede a Palma di Maiorca. Specializzato nel combinare prompt engineering e graphic design per sviluppare agenti IA personalizzati che forniscono risposte precise e allineate al business, integrando identità visiva e automazione.<br><br>Con 6 anni di esperienza nel graphic design e oltre 2 anni nell'IA applicata, porto una combinazione unica di creatività e tecnologia. Autodidatta in ecosistemi IA avanzati e framework di design, fornisco soluzioni innovative, scalabili e altamente personalizzate.",
+                experience_title: "Esperienza Professionale",
+                exp1_title: "Consulenza IA e Automazione",
+                exp1_period: "Freelance & Progetti B2B | 2022 - Presente",
+                exp1_tasks: "<li>Sviluppo e ottimizzazione di prompt per modelli IA generativi</li><li>Creazione di agenti conversazionali personalizzati</li><li>Implementazione di flussi di automazione</li><li>Design di dashboard e interfacce digitali</li>",
+                exp2_title: "Graphic Design & Branding",
+                exp2_period: "Vari Clienti | 2017 - 2021",
+                exp2_tasks: "<li>Design di identità visive per brand locali e internazionali</li><li>Produzione di contenuti grafici e multimediali</li><li>Adattamento di asset visivi per multiple piattaforme</li><li>Collaborazione con team di comunicazione e marketing</li>",
+                skills_title: "Competenze Tecniche",
+                ai_skills: "Intelligenza Artificiale",
+                design_skills: "Design",
+                dev_skills: "Sviluppo Frontend",
+                automation_skills: "Automazione",
+                social_skills: "Social Media",
+                languages_title: "Lingue",
+                spanish: "Spagnolo",
+                english: "Inglese",
+                french: "Francese",
+                native: "Madrelingua",
+                advanced: "Avanzato",
+                intermediate: "Intermedio",
+                achievements_title: "Risultati Chiave",
+                achievement1_title: "Business Bots",
+                achievement1_desc: "Fondazione di azienda specializzata in soluzioni IA per B2B",
+                achievement2_title: "6 Anni di Design",
+                achievement2_desc: "Esperienza consolidata in graphic design e branding",
+                achievement3_title: "Automazione",
+                achievement3_desc: "Implementazione di workflow che ottimizzano i processi aziendali",
+                achievement4_title: "Multilingue",
+                achievement4_desc: "Capacità di lavorare in 5 lingue diverse",
+                download_cv: "Scarica CV PDF",
+                footer_text: "© 2025 Elias Joel Burgos Perez. Tutti i diritti riservati."
+            }
+        };
+
+        let currentLanguage = 'es';
+
+        // Initialize Matrix Background
+        function initMatrixBackground() {
+            const matrixBg = document.getElementById('matrixBg');
+            const lines = 15;
+            
+            for (let i = 0; i < lines; i++) {
+                const line = document.createElement('div');
+                line.className = 'matrix-line';
+                line.style.left = Math.random() * 100 + '%';
+                line.style.animationDelay = Math.random() * 8 + 's';
+                line.style.animationDuration = (8 + Math.random() * 4) + 's';
+                matrixBg.appendChild(line);
+            }
+        }
+
+        // Switch Language Function
+        function switchLanguage(lang) {
+            if (lang === currentLanguage) return;
+            
+            currentLanguage = lang;
+            
+            // Update active button
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector(`[data-lang="${lang}"]`).classList.add('active');
+            
+            // Update content
+            const langData = translations[lang];
+            document.querySelectorAll('[data-key]').forEach(element => {
+                const key = element.getAttribute('data-key');
+                if (langData[key]) {
+                    if (key.includes('tasks')) {
+                        element.innerHTML = langData[key];
+                    } else if (key === 'profile_text') {
+                        element.innerHTML = langData[key];
+                    } else {
+                        element.textContent = langData[key];
+                    }
+                }
+            });
+            
+            // Update document language
+            document.documentElement.lang = lang;
+        }
+
+        // Download PDF Function
+        function downloadPDF() {
+            window.print();
+        }
+
+        // Intersection Observer for animations
+        function initScrollAnimations() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.timeline-item, .skill-category, .language-item, .achievement-card').forEach(el => {
+                observer.observe(el);
+            });
+        }
+
+        // Initialize everything when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            initMatrixBackground();
+            initScrollAnimations();
+            
+            // Animate language progress bars
+            setTimeout(() => {
+                document.querySelectorAll('.language-progress').forEach(bar => {
+                    const width = bar.style.width;
+                    bar.style.width = '0%';
+                    setTimeout(() => {
+                        bar.style.width = width;
+                    }, 100);
+                });
+            }, 1000);
+        });
+
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'979d4c6e1168030f',t:'MTc1Njk4NjkzMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
