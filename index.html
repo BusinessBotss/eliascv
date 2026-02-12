@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Elias J Perez - AI Consultant & Designer. Founder of Business Bots Solutions, specialized in AI-powered consulting and automation.">
+    <meta name="description" content="Elias J Perez - AI Consultant & Designer">
     <title>Elias J Perez - AI Consultant & Designer</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- JavaScript PRIMERO para que las funciones estén disponibles ANTES del HTML -->
+    <script>
+        var currentLanguage = 'es';
+        var translations = {
+            es: {nav_home:"Inicio",nav_about:"Acerca de",nav_services:"Servicios",nav_nfc:"Tarjetas NFC",nav_contact:"Contacto",name:"Elias J Perez",role:"Consultor IA & Diseñador",location:"Palma de Mallorca",profile_title:"Resumen Profesional",profile_text:"Fundador y Director de Sistemas de IA de Business Bots Solutions, una agencia de consultoría y automatización impulsada por IA. Tecnólogo Creativo con 10 años de experiencia en diseño gráfico, 5 años trabajando con sistemas de IA, y 1 año liderando una agencia de IA.",experience_title:"Experiencia Laboral",exp1_title:"Consultoría IA",exp1_period:"Business Bots Solutions | 2023 - Presente",exp1_tasks:"<li>Fundador y director de agencia de consultoría impulsada por IA</li><li>Ingeniería de agentes conversacionales y sistemas inteligentes personalizados</li><li>Arquitectura de soluciones IA de extremo a extremo alineadas con objetivos empresariales</li><li>Liderazgo estratégico en desarrollo de productos y entrega al cliente</li>",exp2_title:"Creación de Aplicaciones",exp2_period:"Business Bots Solutions | 2024 - Presente",exp2_tasks:"<li>Construcción de aplicaciones full-stack aprovechando capacidades de machine learning</li><li>Integración de flujos de automatización en infraestructura empresarial existente</li><li>Transformación de requerimientos complejos en plataformas web escalables</li><li>Conexión de ejecución técnica con visión creativa en proyectos</li>",exp3_title:"Asistente VIP",exp3_period:"Nikki Beach Mallorca | 2022 - 2025",exp3_tasks:"<li>Coordinación de servicios de hospitalidad premium en venue de lujo frente al mar</li><li>Garantía de experiencias fluidas para huéspedes mediante servicio proactivo</li><li>Colaboración con equipos internacionales en entorno de ritmo acelerado</li><li>Refinamiento de habilidades interpersonales y gestión del tiempo bajo presión</li>",exp4_title:"Diseño Gráfico",exp4_period:"Freelance | 2016 - 2026",exp4_tasks:"<li>Creación de identidades visuales y sistemas de marca para clientes globales</li><li>Producción de contenido multimedia en medios digitales e impresos</li><li>Dirección creativa desde concepto hasta ejecución final</li><li>Dominio de herramientas de diseño y evolución con estándares de la industria durante una década</li>",skills_title:"Habilidades Profesionales",ai_skills:"Inteligencia Artificial",design_skills:"Diseño",dev_skills:"Desarrollo Frontend",automation_skills:"Automatización",professional_skills:"Habilidades Profesionales",languages_title:"Idiomas",spanish:"Español",english:"Inglés",french:"Francés",native:"Nativo",advanced:"Avanzado",achievements_title:"Historial de Logros",achievement1_title:"Sistemas IA",achievement1_desc:"5 años de experiencia en sistemas IA, agentes y desarrollo web",achievement2_title:"Diseño Gráfico",achievement2_desc:"10 años de experiencia profesional en diseño",achievement3_title:"Business Bots",achievement3_desc:"Fundador y líder de agencia de consultoría impulsada por IA",achievement4_title:"Dirección Creativa",achievement4_desc:"Liderando equipos creativos y técnicos para productos IA",contact_whatsapp:"Contactar por WhatsApp",footer_text:"© 2026 Elias J Perez. Todos los derechos reservados.",light_mode:"Modo Claro",dark_mode:"Modo Oscuro"},
+            en: {nav_home:"Home",nav_about:"About",nav_services:"Services",nav_nfc:"NFC Cards",nav_contact:"Contact",name:"Elias J Perez",role:"AI Consultant & Designer",location:"Palma de Mallorca",profile_title:"Professional Summary",profile_text:"Founder and AI Systems Director of Business Bots Solutions, an AI-powered consulting and automation agency. Creative Technologist with 10 years of experience in graphic design, 5 years working with AI systems, and 1 year leading an AI agency.",experience_title:"Working Experience",exp1_title:"AI Consulting",exp1_period:"Business Bots Solutions | 2023 - Present",exp1_tasks:"<li>Founded and direct AI-powered consulting agency</li><li>Engineer custom conversational agents and intelligent systems</li><li>Architect end-to-end AI solutions aligned with business objectives</li><li>Strategic leadership in product development and client delivery</li>",exp2_title:"App Creation",exp2_period:"Business Bots Solutions | 2024 - Present",exp2_tasks:"<li>Build full-stack applications leveraging machine learning capabilities</li><li>Integrate automation workflows into existing business infrastructure</li><li>Transform complex requirements into scalable web platforms</li><li>Bridge technical execution with creative vision across projects</li>",exp3_title:"VIP Assistant",exp3_period:"Nikki Beach Mallorca | 2022 - 2025",exp3_tasks:"<li>Coordinated premium hospitality services in luxury beachfront venue</li><li>Ensured seamless guest experiences through proactive service delivery</li><li>Collaborated with international teams in fast-paced environment</li><li>Refined interpersonal and time management skills under pressure</li>",exp4_title:"Graphic Design",exp4_period:"Freelance | 2016 - 2026",exp4_tasks:"<li>Crafted visual identities and brand systems for global clients</li><li>Produced multimedia content across digital and print mediums</li><li>Led creative direction from concept to final execution</li><li>Mastered design tools and evolved with industry standards over a decade</li>",skills_title:"Professional Skills",ai_skills:"Artificial Intelligence",design_skills:"Design",dev_skills:"Frontend Development",automation_skills:"Automation",professional_skills:"Professional Skills",languages_title:"Languages",spanish:"Spanish",english:"English",french:"French",native:"Native",advanced:"Advanced",achievements_title:"Track Record",achievement1_title:"AI Systems",achievement1_desc:"5 years of experience in AI systems, agents, and web development",achievement2_title:"Graphic Design",achievement2_desc:"10 years of professional design experience",achievement3_title:"Business Bots",achievement3_desc:"Founded and leading AI-powered consulting agency",achievement4_title:"Creative Direction",achievement4_desc:"Leading creative and technical teams for AI products",contact_whatsapp:"Contact via WhatsApp",footer_text:"© 2026 Elias J Perez. All rights reserved.",light_mode:"Light Mode",dark_mode:"Dark Mode"},
+            fr: {nav_home:"Accueil",nav_about:"À propos",nav_services:"Services",nav_nfc:"Cartes NFC",nav_contact:"Contact",name:"Elias J Perez",role:"Consultant IA & Designer",location:"Palma de Majorque",profile_title:"Résumé Professionnel",profile_text:"Fondateur et Directeur des Systèmes IA de Business Bots Solutions, une agence de conseil et d'automatisation alimentée par l'IA. Technologue Créatif avec 10 ans d'expérience en design graphique, 5 ans de travail avec des systèmes IA, et 1 an à la tête d'une agence IA.",experience_title:"Expérience Professionnelle",exp1_title:"Conseil IA",exp1_period:"Business Bots Solutions | 2023 - Présent",exp1_tasks:"<li>Fondateur et directeur d'agence de conseil alimentée par l'IA</li><li>Ingénierie d'agents conversationnels et systèmes intelligents sur mesure</li><li>Architecture de solutions IA de bout en bout alignées sur les objectifs commerciaux</li><li>Leadership stratégique en développement de produits et livraison client</li>",exp2_title:"Création d'Applications",exp2_period:"Business Bots Solutions | 2024 - Présent",exp2_tasks:"<li>Construction d'applications full-stack exploitant les capacités de machine learning</li><li>Intégration de flux d'automatisation dans l'infrastructure commerciale existante</li><li>Transformation d'exigences complexes en plateformes web évolutives</li><li>Pont entre exécution technique et vision créative à travers les projets</li>",exp3_title:"Assistant VIP",exp3_period:"Nikki Beach Mallorca | 2022 - 2025",exp3_tasks:"<li>Coordination de services d'hospitalité premium dans lieu de luxe en bord de mer</li><li>Garantie d'expériences fluides pour les invités par service proactif</li><li>Collaboration avec équipes internationales dans environnement dynamique</li><li>Perfectionnement des compétences interpersonales et gestion du temps sous pression</li>",exp4_title:"Design Graphique",exp4_period:"Freelance | 2016 - 2026",exp4_tasks:"<li>Création d'identités visuelles et systèmes de marque pour clients mondiaux</li><li>Production de contenu multimédia sur supports numériques et imprimés</li><li>Direction créative du concept à l'exécution finale</li><li>Maîtrise des outils de design et évolution avec les standards de l'industrie pendant une décennie</li>",skills_title:"Compétences Professionnelles",ai_skills:"Intelligence Artificielle",design_skills:"Design",dev_skills:"Développement Frontend",automation_skills:"Automatisation",professional_skills:"Compétences Professionnelles",languages_title:"Langues",spanish:"Espagnol",english:"Anglais",french:"Français",native:"Natif",advanced:"Avancé",achievements_title:"Bilan des Réalisations",achievement1_title:"Systèmes IA",achievement1_desc:"5 ans d'expérience en systèmes IA, agents et développement web",achievement2_title:"Design Graphique",achievement2_desc:"10 ans d'expérience professionnelle en design",achievement3_title:"Business Bots",achievement3_desc:"Fondateur et dirigeant d'une agence de conseil alimentée par l'IA",achievement4_title:"Direction Créative",achievement4_desc:"Direction d'équipes créatives et techniques pour produits IA",contact_whatsapp:"Contacter via WhatsApp",footer_text:"© 2026 Elias J Perez. Tous droits réservés.",light_mode:"Mode Clair",dark_mode:"Mode Sombre"},
+            de: {nav_home:"Startseite",nav_about:"Über",nav_services:"Dienstleistungen",nav_nfc:"NFC-Karten",nav_contact:"Kontakt",name:"Elias J Perez",role:"KI-Berater & Designer",location:"Palma de Mallorca",profile_title:"Berufsprofil",profile_text:"Gründer und KI-Systemdirektor von Business Bots Solutions, einer KI-gestützten Beratungs- und Automatisierungsagentur. Kreativer Technologe mit 10 Jahren Erfahrung in Grafikdesign, 5 Jahren Arbeit mit KI-Systemen und 1 Jahr Leitung einer KI-Agentur.",experience_title:"Berufserfahrung",exp1_title:"KI-Beratung",exp1_period:"Business Bots Solutions | 2023 - Heute",exp1_tasks:"<li>Gründer und Leiter einer KI-gestützten Beratungsagentur</li><li>Engineering maßgeschneiderter Konversationsagenten und intelligenter Systeme</li><li>Architektur von End-to-End-KI-Lösungen ausgerichtet auf Geschäftsziele</li><li>Strategische Führung in Produktentwicklung und Kundenbetreuung</li>",exp2_title:"App-Entwicklung",exp2_period:"Business Bots Solutions | 2024 - Heute",exp2_tasks:"<li>Aufbau von Full-Stack-Anwendungen mit Machine-Learning-Funktionen</li><li>Integration von Automatisierungs-Workflows in bestehende Geschäftsinfrastruktur</li><li>Transformation komplexer Anforderungen in skalierbare Web-Plattformen</li><li>Verbindung technischer Ausführung mit kreativer Vision über Projekte hinweg</li>",exp3_title:"VIP-Assistent",exp3_period:"Nikki Beach Mallorca | 2022 - 2025",exp3_tasks:"<li>Koordination von Premium-Hospitality-Services in Luxus-Strandlocation</li><li>Gewährleistung nahtloser Gästeerlebnisse durch proaktiven Service</li><li>Zusammenarbeit mit internationalen Teams in schnellem Umfeld</li><li>Verfeinerung interpersoneller und Zeitmanagement-Fähigkeiten unter Druck</li>",exp4_title:"Grafikdesign",exp4_period:"Freelance | 2016 - 2026",exp4_tasks:"<li>Gestaltung visueller Identitäten und Markensysteme für globale Kunden</li><li>Produktion von Multimedia-Inhalten über digitale und gedruckte Medien</li><li>Leitung kreativer Richtung vom Konzept bis zur finalen Ausführung</li><li>Beherrschung von Design-Tools und Entwicklung mit Industriestandards über ein Jahrzehnt</li>",skills_title:"Berufliche Fähigkeiten",ai_skills:"Künstliche Intelligenz",design_skills:"Design",dev_skills:"Frontend-Entwicklung",automation_skills:"Automatisierung",professional_skills:"Berufliche Fähigkeiten",languages_title:"Sprachen",spanish:"Spanisch",english:"Englisch",french:"Französisch",native:"Muttersprache",advanced:"Fortgeschritten",achievements_title:"Erfolge",achievement1_title:"KI-Systeme",achievement1_desc:"5 Jahre Erfahrung in KI-Systemen, Agenten und Webentwicklung",achievement2_title:"Grafikdesign",achievement2_desc:"10 Jahre professionelle Design-Erfahrung",achievement3_title:"Business Bots",achievement3_desc:"Gründer und Leiter einer KI-gestützten Beratungsagentur",achievement4_title:"Kreative Leitung",achievement4_desc:"Leitung kreativer und technischer Teams für KI-Produkte",contact_whatsapp:"Kontakt über WhatsApp",footer_text:"© 2026 Elias J Perez. Alle Rechte vorbehalten.",light_mode:"Heller Modus",dark_mode:"Dunkler Modus"},
+            it: {nav_home:"Home",nav_about:"Chi Sono",nav_services:"Servizi",nav_nfc:"Carte NFC",nav_contact:"Contatto",name:"Elias J Perez",role:"Consulente IA & Designer",location:"Palma di Maiorca",profile_title:"Riepilogo Professionale",profile_text:"Fondatore e Direttore dei Sistemi IA di Business Bots Solutions, un'agenzia di consulenza e automazione alimentata dall'IA. Tecnologo Creativo con 10 anni di esperienza nel graphic design, 5 anni di lavoro con sistemi IA, e 1 anno alla guida di un'agenzia IA.",experience_title:"Esperienza Lavorativa",exp1_title:"Consulenza IA",exp1_period:"Business Bots Solutions | 2023 - Presente",exp1_tasks:"<li>Fondatore e direttore di agenzia di consulenza alimentata dall'IA</li><li>Ingegneria di agenti conversazionali e sistemi intelligenti personalizzati</li><li>Architettura di soluzioni IA end-to-end allineate agli obiettivi aziendali</li><li>Leadership strategica nello sviluppo prodotti e consegna clienti</li>",exp2_title:"Creazione App",exp2_period:"Business Bots Solutions | 2024 - Presente",exp2_tasks:"<li>Costruzione di applicazioni full-stack sfruttando capacità di machine learning</li><li>Integrazione di flussi di automazione nell'infrastruttura aziendale esistente</li><li>Trasformazione di requisiti complessi in piattaforme web scalabili</li><li>Collegamento tra esecuzione tecnica e visione creativa nei progetti</li>",exp3_title:"Assistente VIP",exp3_period:"Nikki Beach Mallorca | 2022 - 2025",exp3_tasks:"<li>Coordinamento di servizi di ospitalità premium in locale di lusso sul mare</li><li>Garanzia di esperienze fluide per gli ospiti attraverso servizio proattivo</li><li>Collaborazione con team internazionali in ambiente dinamico</li><li>Perfezionamento di competenze interpersonali e gestione del tempo sotto pressione</li>",exp4_title:"Graphic Design",exp4_period:"Freelance | 2016 - 2026",exp4_tasks:"<li>Creazione di identità visive e sistemi di brand per clienti globali</li><li>Produzione di contenuti multimediali su supporti digitali e stampati</li><li>Direzione creativa dal concept all'esecuzione finale</li><li>Padronanza di strumenti di design ed evoluzione con standard dell'industria per un decennio</li>",skills_title:"Competenze Professionali",ai_skills:"Intelligenza Artificiale",design_skills:"Design",dev_skills:"Sviluppo Frontend",automation_skills:"Automazione",professional_skills:"Competenze Professionali",languages_title:"Lingue",spanish:"Spagnolo",english:"Inglese",french:"Francese",native:"Madrelingua",advanced:"Avanzato",achievements_title:"Risultati",achievement1_title:"Sistemi IA",achievement1_desc:"5 anni di esperienza in sistemi IA, agenti e sviluppo web",achievement2_title:"Graphic Design",achievement2_desc:"10 anni di esperienza professionale in design",achievement3_title:"Business Bots",achievement3_desc:"Fondatore e leader di agenzia di consulenza alimentata dall'IA",achievement4_title:"Direzione Creativa",achievement4_desc:"Guida di team creativi e tecnici per prodotti IA",contact_whatsapp:"Contatta via WhatsApp",footer_text:"© 2026 Elias J Perez. Tutti i diritti riservati.",light_mode:"Modalità Chiara",dark_mode:"Modalità Scura"}
+        };
+        function switchLanguage(lang){if(!lang||lang===currentLanguage)return;currentLanguage=lang;var buttons=document.querySelectorAll('.lang-btn');for(var i=0;i<buttons.length;i++){buttons[i].classList.remove('active');if(buttons[i].getAttribute('data-lang')===lang){buttons[i].classList.add('active');}}var langData=translations[lang];if(!langData)return;var elements=document.querySelectorAll('[data-key]');for(var i=0;i<elements.length;i++){var element=elements[i];var key=element.getAttribute('data-key');if(langData[key]){if(key.indexOf('tasks')!==-1||key==='profile_text'){element.innerHTML=langData[key];}else{element.textContent=langData[key];}}}document.documentElement.lang=lang;}
+        function toggleTheme(){var body=document.body;var themeIcon=document.getElementById('themeIcon');var themeText=document.getElementById('themeText');if(!themeIcon||!themeText)return;body.classList.toggle('light-mode');if(body.classList.contains('light-mode')){themeIcon.textContent='🌙';themeText.setAttribute('data-key','dark_mode');try{localStorage.setItem('theme','light');}catch(e){}}else{themeIcon.textContent='☀';themeText.setAttribute('data-key','light_mode');try{localStorage.setItem('theme','dark');}catch(e){}}var langData=translations[currentLanguage];var key=themeText.getAttribute('data-key');if(langData&&langData[key]){themeText.textContent=langData[key];}}
+        function initializeApp(){var matrixBg=document.getElementById('matrixBg');if(matrixBg){for(var i=0;i<15;i++){var line=document.createElement('div');line.className='matrix-line';line.style.left=Math.random()*100+'%';line.style.animationDelay=Math.random()*8+'s';line.style.animationDuration=(8+Math.random()*4)+'s';matrixBg.appendChild(line);}}try{var savedTheme=localStorage.getItem('theme');if(savedTheme==='light'){document.body.classList.add('light-mode');var icon=document.getElementById('themeIcon');var text=document.getElementById('themeText');if(icon&&text){icon.textContent='🌙';text.setAttribute('data-key','dark_mode');text.textContent=translations[currentLanguage]['dark_mode'];}}}catch(e){}setTimeout(function(){var bars=document.querySelectorAll('.language-progress');for(var i=0;i<bars.length;i++){var width=bars[i].style.width;bars[i].style.width='0%';(function(bar,w){setTimeout(function(){bar.style.width=w;},100);})(bars[i],width);}},1000);if('IntersectionObserver'in window){var observer=new IntersectionObserver(function(entries){for(var i=0;i<entries.length;i++){if(entries[i].isIntersecting){entries[i].target.classList.add('fade-in');}}},{threshold:0.1});var animatedElements=document.querySelectorAll('.timeline-item, .skill-category, .language-item, .achievement-card');for(var i=0;i<animatedElements.length;i++){observer.observe(animatedElements[i]);}}}
+        if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',initializeApp);}else{initializeApp();}
+    </script>
     <style>
         :root {
             --bg-primary: #000000;
@@ -992,11 +1008,11 @@
     <nav class="nav">
         <div class="nav-container">
             <div class="nav-links">
-                <a href="https://businessbotspage.web.app" class="nav-link" data-key="nav_home">Home</a>
-                <a href="https://businessbotspage.web.app" class="nav-link" data-key="nav_about">About</a>
-                <a href="https://businessbotspage.web.app" class="nav-link" data-key="nav_services">Services</a>
-                <a href="https://businessbotspage.web.app" class="nav-link" data-key="nav_nfc">NFC Cards</a>
-                <a href="https://wa.me/34644075065" class="nav-link" data-key="nav_contact">Contact</a>
+                <a href="https://businessbotspage.web.app" class="nav-link" data-key="nav_home">Inicio</a>
+                <a href="https://businessbotspage.web.app" class="nav-link" data-key="nav_about">Acerca de</a>
+                <a href="https://businessbotspage.web.app" class="nav-link" data-key="nav_services">Servicios</a>
+                <a href="https://businessbotspage.web.app" class="nav-link" data-key="nav_nfc">Tarjetas NFC</a>
+                <a href="https://wa.me/34644075065" class="nav-link" data-key="nav_contact">Contacto</a>
             </div>
             <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
                 <div class="lang-selector">
@@ -1008,7 +1024,7 @@
                 </div>
                 <button class="theme-toggle" onclick="toggleTheme()" id="themeToggle">
                     <span id="themeIcon">☀</span>
-                    <span id="themeText" data-key="light_mode">Light Mode</span>
+                    <span id="themeText" data-key="light_mode">Modo Claro</span>
                 </button>
             </div>
         </div>
@@ -1022,10 +1038,10 @@
                     <img src="https://res.cloudinary.com/dxhef6dju/image/upload/v1756986274/IMG_9461_2_l1qw8s.jpg" alt="Elias J Perez">
                 </div>
                 <h1 data-key="name">Elias J Perez</h1>
-                <p class="role" data-key="role">AI Consultant & Designer</p>
+                <p class="role" data-key="role">Consultor IA & Diseñador</p>
                 <div class="contact-info">
-                    <a href="/cdn-cgi/l/email-protection#dbbeb9b8b7b2b2b8b0a89bbcb6bab2b7f5b8b4b6" class="contact-item">
-                        <span><span class="__cf_email__" data-cfemail="5b3e39383732323830281b3c363a323775383436">[email&#160;protected]</span></span>
+                    <a href="/cdn-cgi/l/email-protection#177275747b7e7e747c6457707a767e7b3974787a" class="contact-item">
+                        <span><span class="__cf_email__" data-cfemail="731611101f1a1a10180033141e121a1f5d101c1e">[email&#160;protected]</span></span>
                     </a>
                     <a href="https://wa.me/34644075065" class="contact-item" target="_blank" rel="noopener">
                         <span>+34 644 075 065</span>
@@ -1055,10 +1071,10 @@
     <!-- Profile Section -->
     <section class="section" style="padding-top: 120px;">
         <div class="container">
-            <h2 class="section-title" data-key="profile_title">Professional Summary</h2>
+            <h2 class="section-title" data-key="profile_title">Resumen Profesional</h2>
             <div class="profile-content">
                 <p data-key="profile_text">
-                    Founder and AI Systems Director of Business Bots Solutions, an AI-powered consulting and automation agency. Creative Technologist with 10 years of experience in graphic design, 5 years working with AI systems, and 1 year leading an AI agency.
+                    Fundador y Director de Sistemas de IA de Business Bots Solutions, una agencia de consultoría y automatización impulsada por IA. Tecnólogo Creativo con 10 años de experiencia en diseño gráfico, 5 años trabajando con sistemas de IA, y 1 año liderando una agencia de IA.
                 </p>
             </div>
         </div>
@@ -1069,56 +1085,56 @@
     <!-- Experience Section -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title" data-key="experience_title">Working Experience</h2>
+            <h2 class="section-title" data-key="experience_title">Experiencia Laboral</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3 data-key="exp1_title">AI Consulting</h3>
-                        <span class="timeline-period" data-key="exp1_period">Business Bots Solutions | 2023 - Present</span>
+                        <h3 data-key="exp1_title">Consultoría IA</h3>
+                        <span class="timeline-period" data-key="exp1_period">Business Bots Solutions | 2023 - Presente</span>
                         <ul data-key="exp1_tasks">
-                            <li>Founded and direct AI-powered consulting agency</li>
-                            <li>Engineer custom conversational agents and intelligent systems</li>
-                            <li>Architect end-to-end AI solutions aligned with business objectives</li>
-                            <li>Strategic leadership in product development and client delivery</li>
+                            <li>Fundador y director de agencia de consultoría impulsada por IA</li>
+                            <li>Ingeniería de agentes conversacionales y sistemas inteligentes personalizados</li>
+                            <li>Arquitectura de soluciones IA de extremo a extremo alineadas con objetivos empresariales</li>
+                            <li>Liderazgo estratégico en desarrollo de productos y entrega al cliente</li>
                         </ul>
                     </div>
                     <div class="timeline-dot"></div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3 data-key="exp2_title">App Creation</h3>
-                        <span class="timeline-period" data-key="exp2_period">Business Bots Solutions | 2024 - Present</span>
+                        <h3 data-key="exp2_title">Creación de Aplicaciones</h3>
+                        <span class="timeline-period" data-key="exp2_period">Business Bots Solutions | 2024 - Presente</span>
                         <ul data-key="exp2_tasks">
-                            <li>Build full-stack applications leveraging machine learning capabilities</li>
-                            <li>Integrate automation workflows into existing business infrastructure</li>
-                            <li>Transform complex requirements into scalable web platforms</li>
-                            <li>Bridge technical execution with creative vision across projects</li>
+                            <li>Construcción de aplicaciones full-stack aprovechando capacidades de machine learning</li>
+                            <li>Integración de flujos de automatización en infraestructura empresarial existente</li>
+                            <li>Transformación de requerimientos complejos en plataformas web escalables</li>
+                            <li>Conexión de ejecución técnica con visión creativa en proyectos</li>
                         </ul>
                     </div>
                     <div class="timeline-dot"></div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3 data-key="exp3_title">VIP Assistant</h3>
+                        <h3 data-key="exp3_title">Asistente VIP</h3>
                         <span class="timeline-period" data-key="exp3_period">Nikki Beach Mallorca | 2022 - 2025</span>
                         <ul data-key="exp3_tasks">
-                            <li>Coordinated premium hospitality services in luxury beachfront venue</li>
-                            <li>Ensured seamless guest experiences through proactive service delivery</li>
-                            <li>Collaborated with international teams in fast-paced environment</li>
-                            <li>Refined interpersonal and time management skills under pressure</li>
+                            <li>Coordinación de servicios de hospitalidad premium en venue de lujo frente al mar</li>
+                            <li>Garantía de experiencias fluidas para huéspedes mediante servicio proactivo</li>
+                            <li>Colaboración con equipos internacionales en entorno de ritmo acelerado</li>
+                            <li>Refinamiento de habilidades interpersonales y gestión del tiempo bajo presión</li>
                         </ul>
                     </div>
                     <div class="timeline-dot"></div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3 data-key="exp4_title">Graphic Design</h3>
+                        <h3 data-key="exp4_title">Diseño Gráfico</h3>
                         <span class="timeline-period" data-key="exp4_period">Freelance | 2016 - 2026</span>
                         <ul data-key="exp4_tasks">
-                            <li>Crafted visual identities and brand systems for global clients</li>
-                            <li>Produced multimedia content across digital and print mediums</li>
-                            <li>Led creative direction from concept to final execution</li>
-                            <li>Mastered design tools and evolved with industry standards over a decade</li>
+                            <li>Creación de identidades visuales y sistemas de marca para clientes globales</li>
+                            <li>Producción de contenido multimedia en medios digitales e impresos</li>
+                            <li>Dirección creativa desde concepto hasta ejecución final</li>
+                            <li>Dominio de herramientas de diseño y evolución con estándares de la industria durante una década</li>
                         </ul>
                     </div>
                     <div class="timeline-dot"></div>
@@ -1132,10 +1148,10 @@
     <!-- Skills Section -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title" data-key="skills_title">Professional Skills</h2>
+            <h2 class="section-title" data-key="skills_title">Habilidades Profesionales</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3 data-key="ai_skills">Artificial Intelligence</h3>
+                    <h3 data-key="ai_skills">Inteligencia Artificial</h3>
                     <div class="skill-pills">
                         <span class="skill-pill">GPT</span>
                         <span class="skill-pill">Higgsfield</span>
@@ -1146,7 +1162,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3 data-key="design_skills">Design</h3>
+                    <h3 data-key="design_skills">Diseño</h3>
                     <div class="skill-pills">
                         <span class="skill-pill">Photoshop</span>
                         <span class="skill-pill">Illustrator</span>
@@ -1156,7 +1172,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3 data-key="dev_skills">Frontend Development</h3>
+                    <h3 data-key="dev_skills">Desarrollo Frontend</h3>
                     <div class="skill-pills">
                         <span class="skill-pill">HTML</span>
                         <span class="skill-pill">CSS</span>
@@ -1166,7 +1182,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3 data-key="automation_skills">Automation</h3>
+                    <h3 data-key="automation_skills">Automatización</h3>
                     <div class="skill-pills">
                         <span class="skill-pill">Make</span>
                         <span class="skill-pill">n8n</span>
@@ -1176,7 +1192,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3 data-key="professional_skills">Professional</h3>
+                    <h3 data-key="professional_skills">Habilidades Profesionales</h3>
                     <div class="skill-pills">
                         <span class="skill-pill">Creative Director</span>
                         <span class="skill-pill">Client Relationship Management</span>
@@ -1196,12 +1212,12 @@
     <!-- Languages Section -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title" data-key="languages_title">Languages</h2>
+            <h2 class="section-title" data-key="languages_title">Idiomas</h2>
             <div class="languages-grid">
                 <div class="language-item">
                     <div class="language-header">
-                        <span><strong data-key="spanish">Spanish</strong></span>
-                        <span data-key="native">Native</span>
+                        <span><strong data-key="spanish">Español</strong></span>
+                        <span data-key="native">Nativo</span>
                     </div>
                     <div class="language-bar">
                         <div class="language-progress" style="width: 100%"></div>
@@ -1209,8 +1225,8 @@
                 </div>
                 <div class="language-item">
                     <div class="language-header">
-                        <span><strong data-key="english">English</strong></span>
-                        <span data-key="advanced">Advanced</span>
+                        <span><strong data-key="english">Inglés</strong></span>
+                        <span data-key="advanced">Avanzado</span>
                     </div>
                     <div class="language-bar">
                         <div class="language-progress" style="width: 85%"></div>
@@ -1218,8 +1234,8 @@
                 </div>
                 <div class="language-item">
                     <div class="language-header">
-                        <span><strong data-key="french">French</strong></span>
-                        <span data-key="native">Native</span>
+                        <span><strong data-key="french">Francés</strong></span>
+                        <span data-key="native">Nativo</span>
                     </div>
                     <div class="language-bar">
                         <div class="language-progress" style="width: 100%"></div>
@@ -1234,27 +1250,27 @@
     <!-- Achievements Section -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title" data-key="achievements_title">Track Record</h2>
+            <h2 class="section-title" data-key="achievements_title">Historial de Logros</h2>
             <div class="achievements-grid">
                 <div class="achievement-card">
                     <div class="achievement-icon">AI</div>
-                    <h3 data-key="achievement1_title">AI Systems</h3>
-                    <p data-key="achievement1_desc">5 years of experience in AI systems, agents, and web development</p>
+                    <h3 data-key="achievement1_title">Sistemas IA</h3>
+                    <p data-key="achievement1_desc">5 años de experiencia en sistemas IA, agentes y desarrollo web</p>
                 </div>
                 <div class="achievement-card">
                     <div class="achievement-icon">GD</div>
-                    <h3 data-key="achievement2_title">Graphic Design</h3>
-                    <p data-key="achievement2_desc">10 years of professional design experience</p>
+                    <h3 data-key="achievement2_title">Diseño Gráfico</h3>
+                    <p data-key="achievement2_desc">10 años de experiencia profesional en diseño</p>
                 </div>
                 <div class="achievement-card">
                     <div class="achievement-icon">BB</div>
                     <h3 data-key="achievement3_title">Business Bots</h3>
-                    <p data-key="achievement3_desc">Founded and leading AI-powered consulting agency</p>
+                    <p data-key="achievement3_desc">Fundador y líder de agencia de consultoría impulsada por IA</p>
                 </div>
                 <div class="achievement-card">
                     <div class="achievement-icon">CD</div>
-                    <h3 data-key="achievement4_title">Creative Direction</h3>
-                    <p data-key="achievement4_desc">Leading creative and technical teams for AI products</p>
+                    <h3 data-key="achievement4_title">Dirección Creativa</h3>
+                    <p data-key="achievement4_desc">Liderando equipos creativos y técnicos para productos IA</p>
                 </div>
             </div>
         </div>
@@ -1264,424 +1280,8 @@
     <footer class="footer">
         <div class="container">
             <a href="https://wa.me/34644075065" target="_blank" rel="noopener" class="download-btn" data-key="contact_whatsapp">
-                Contact via WhatsApp
+                Contactar por WhatsApp
             </a>
-            <p data-key="footer_text">© 2026 Elias J Perez. All rights reserved.</p>
+            <p data-key="footer_text">© 2026 Elias J Perez. Todos los derechos reservados.</p>
         </div>
     </footer>
-
-    <script>
-        // Translations object
-        const translations = {
-            es: {
-                nav_home: "Inicio",
-                nav_about: "Acerca de",
-                nav_services: "Servicios",
-                nav_nfc: "Tarjetas NFC",
-                nav_contact: "Contacto",
-                name: "Elias J Perez",
-                role: "Consultor IA & Diseñador",
-                location: "Palma de Mallorca",
-                profile_title: "Resumen Profesional",
-                profile_text: "Fundador y Director de Sistemas de IA de Business Bots Solutions, una agencia de consultoría y automatización impulsada por IA. Tecnólogo Creativo con 10 años de experiencia en diseño gráfico, 5 años trabajando con sistemas de IA, y 1 año liderando una agencia de IA.",
-                experience_title: "Experiencia Laboral",
-                exp1_title: "Consultoría IA",
-                exp1_period: "Business Bots Solutions | 2023 - Presente",
-                exp1_tasks: "<li>Fundador y director de agencia de consultoría impulsada por IA</li><li>Ingeniería de agentes conversacionales y sistemas inteligentes personalizados</li><li>Arquitectura de soluciones IA de extremo a extremo alineadas con objetivos empresariales</li><li>Liderazgo estratégico en desarrollo de productos y entrega al cliente</li>",
-                exp2_title: "Creación de Aplicaciones",
-                exp2_period: "Business Bots Solutions | 2024 - Presente",
-                exp2_tasks: "<li>Construcción de aplicaciones full-stack aprovechando capacidades de machine learning</li><li>Integración de flujos de automatización en infraestructura empresarial existente</li><li>Transformación de requerimientos complejos en plataformas web escalables</li><li>Conexión de ejecución técnica con visión creativa en proyectos</li>",
-                exp3_title: "Asistente VIP",
-                exp3_period: "Nikki Beach Mallorca | 2022 - 2025",
-                exp3_tasks: "<li>Coordinación de servicios de hospitalidad premium en venue de lujo frente al mar</li><li>Garantía de experiencias fluidas para huéspedes mediante servicio proactivo</li><li>Colaboración con equipos internacionales en entorno de ritmo acelerado</li><li>Refinamiento de habilidades interpersonales y gestión del tiempo bajo presión</li>",
-                exp4_title: "Diseño Gráfico",
-                exp4_period: "Freelance | 2016 - 2026",
-                exp4_tasks: "<li>Creación de identidades visuales y sistemas de marca para clientes globales</li><li>Producción de contenido multimedia en medios digitales e impresos</li><li>Dirección creativa desde concepto hasta ejecución final</li><li>Dominio de herramientas de diseño y evolución con estándares de la industria durante una década</li>",
-                skills_title: "Habilidades Profesionales",
-                ai_skills: "Inteligencia Artificial",
-                design_skills: "Diseño",
-                dev_skills: "Desarrollo Frontend",
-                automation_skills: "Automatización",
-                professional_skills: "Habilidades Profesionales",
-                languages_title: "Idiomas",
-                spanish: "Español",
-                english: "Inglés",
-                french: "Francés",
-                native: "Nativo",
-                advanced: "Avanzado",
-                achievements_title: "Historial de Logros",
-                achievement1_title: "Sistemas IA",
-                achievement1_desc: "5 años de experiencia en sistemas IA, agentes y desarrollo web",
-                achievement2_title: "Diseño Gráfico",
-                achievement2_desc: "10 años de experiencia profesional en diseño",
-                achievement3_title: "Business Bots",
-                achievement3_desc: "Fundador y líder de agencia de consultoría impulsada por IA",
-                achievement4_title: "Dirección Creativa",
-                achievement4_desc: "Liderando equipos creativos y técnicos para productos IA",
-                contact_whatsapp: "Contactar por WhatsApp",
-                footer_text: "© 2026 Elias J Perez. Todos los derechos reservados.",
-                light_mode: "Modo Claro",
-                dark_mode: "Modo Oscuro"
-            },
-            en: {
-                nav_home: "Home",
-                nav_about: "About",
-                nav_services: "Services",
-                nav_nfc: "NFC Cards",
-                nav_contact: "Contact",
-                name: "Elias J Perez",
-                role: "AI Consultant & Designer",
-                location: "Palma de Mallorca",
-                profile_title: "Professional Summary",
-                profile_text: "Founder and AI Systems Director of Business Bots Solutions, an AI-powered consulting and automation agency. Creative Technologist with 10 years of experience in graphic design, 5 years working with AI systems, and 1 year leading an AI agency.",
-                experience_title: "Working Experience",
-                exp1_title: "AI Consulting",
-                exp1_period: "Business Bots Solutions | 2023 - Present",
-                exp1_tasks: "<li>Founded and direct AI-powered consulting agency</li><li>Engineer custom conversational agents and intelligent systems</li><li>Architect end-to-end AI solutions aligned with business objectives</li><li>Strategic leadership in product development and client delivery</li>",
-                exp2_title: "App Creation",
-                exp2_period: "Business Bots Solutions | 2024 - Present",
-                exp2_tasks: "<li>Build full-stack applications leveraging machine learning capabilities</li><li>Integrate automation workflows into existing business infrastructure</li><li>Transform complex requirements into scalable web platforms</li><li>Bridge technical execution with creative vision across projects</li>",
-                exp3_title: "VIP Assistant",
-                exp3_period: "Nikki Beach Mallorca | 2022 - 2025",
-                exp3_tasks: "<li>Coordinated premium hospitality services in luxury beachfront venue</li><li>Ensured seamless guest experiences through proactive service delivery</li><li>Collaborated with international teams in fast-paced environment</li><li>Refined interpersonal and time management skills under pressure</li>",
-                exp4_title: "Graphic Design",
-                exp4_period: "Freelance | 2016 - 2026",
-                exp4_tasks: "<li>Crafted visual identities and brand systems for global clients</li><li>Produced multimedia content across digital and print mediums</li><li>Led creative direction from concept to final execution</li><li>Mastered design tools and evolved with industry standards over a decade</li>",
-                skills_title: "Professional Skills",
-                ai_skills: "Artificial Intelligence",
-                design_skills: "Design",
-                dev_skills: "Frontend Development",
-                automation_skills: "Automation",
-                professional_skills: "Professional Skills",
-                languages_title: "Languages",
-                spanish: "Spanish",
-                english: "English",
-                french: "French",
-                native: "Native",
-                advanced: "Advanced",
-                achievements_title: "Track Record",
-                achievement1_title: "AI Systems",
-                achievement1_desc: "5 years of experience in AI systems, agents, and web development",
-                achievement2_title: "Graphic Design",
-                achievement2_desc: "10 years of professional design experience",
-                achievement3_title: "Business Bots",
-                achievement3_desc: "Founded and leading AI-powered consulting agency",
-                achievement4_title: "Creative Direction",
-                achievement4_desc: "Leading creative and technical teams for AI products",
-                contact_whatsapp: "Contact via WhatsApp",
-                footer_text: "© 2026 Elias J Perez. All rights reserved.",
-                light_mode: "Light Mode",
-                dark_mode: "Dark Mode"
-            },
-            fr: {
-                nav_home: "Accueil",
-                nav_about: "À propos",
-                nav_services: "Services",
-                nav_nfc: "Cartes NFC",
-                nav_contact: "Contact",
-                name: "Elias J Perez",
-                role: "Consultant IA & Designer",
-                location: "Palma de Majorque",
-                profile_title: "Résumé Professionnel",
-                profile_text: "Fondateur et Directeur des Systèmes IA de Business Bots Solutions, une agence de conseil et d'automatisation alimentée par l'IA. Technologue Créatif avec 10 ans d'expérience en design graphique, 5 ans de travail avec des systèmes IA, et 1 an à la tête d'une agence IA.",
-                experience_title: "Expérience Professionnelle",
-                exp1_title: "Conseil IA",
-                exp1_period: "Business Bots Solutions | 2023 - Présent",
-                exp1_tasks: "<li>Fondateur et directeur d'agence de conseil alimentée par l'IA</li><li>Ingénierie d'agents conversationnels et systèmes intelligents sur mesure</li><li>Architecture de solutions IA de bout en bout alignées sur les objectifs commerciaux</li><li>Leadership stratégique en développement de produits et livraison client</li>",
-                exp2_title: "Création d'Applications",
-                exp2_period: "Business Bots Solutions | 2024 - Présent",
-                exp2_tasks: "<li>Construction d'applications full-stack exploitant les capacités de machine learning</li><li>Intégration de flux d'automatisation dans l'infrastructure commerciale existante</li><li>Transformation d'exigences complexes en plateformes web évolutives</li><li>Pont entre exécution technique et vision créative à travers les projets</li>",
-                exp3_title: "Assistant VIP",
-                exp3_period: "Nikki Beach Mallorca | 2022 - 2025",
-                exp3_tasks: "<li>Coordination de services d'hospitalité premium dans lieu de luxe en bord de mer</li><li>Garantie d'expériences fluides pour les invités par service proactif</li><li>Collaboration avec équipes internationales dans environnement dynamique</li><li>Perfectionnement des compétences interpersonnelles et gestion du temps sous pression</li>",
-                exp4_title: "Design Graphique",
-                exp4_period: "Freelance | 2016 - 2026",
-                exp4_tasks: "<li>Création d'identités visuelles et systèmes de marque pour clients mondiaux</li><li>Production de contenu multimédia sur supports numériques et imprimés</li><li>Direction créative du concept à l'exécution finale</li><li>Maîtrise des outils de design et évolution avec les standards de l'industrie pendant une décennie</li>",
-                skills_title: "Compétences Professionnelles",
-                ai_skills: "Intelligence Artificielle",
-                design_skills: "Design",
-                dev_skills: "Développement Frontend",
-                automation_skills: "Automatisation",
-                professional_skills: "Compétences Professionnelles",
-                languages_title: "Langues",
-                spanish: "Espagnol",
-                english: "Anglais",
-                french: "Français",
-                native: "Natif",
-                advanced: "Avancé",
-                intermediate: "Intermédiaire",
-                achievements_title: "Bilan des Réalisations",
-                achievement1_title: "Systèmes IA",
-                achievement1_desc: "5 ans d'expérience en systèmes IA, agents et développement web",
-                achievement2_title: "Design Graphique",
-                achievement2_desc: "10 ans d'expérience professionnelle en design",
-                achievement3_title: "Business Bots",
-                achievement3_desc: "Fondateur et dirigeant d'une agence de conseil alimentée par l'IA",
-                achievement4_title: "Direction Créative",
-                achievement4_desc: "Direction d'équipes créatives et techniques pour produits IA",
-                contact_whatsapp: "Contacter via WhatsApp",
-                footer_text: "© 2026 Elias J Perez. Tous droits réservés.",
-                light_mode: "Mode Clair",
-                dark_mode: "Mode Sombre"
-            },
-            de: {
-                nav_home: "Startseite",
-                nav_about: "Über",
-                nav_services: "Dienstleistungen",
-                nav_nfc: "NFC-Karten",
-                nav_contact: "Kontakt",
-                name: "Elias J Perez",
-                role: "KI-Berater & Designer",
-                location: "Palma de Mallorca",
-                profile_title: "Berufsprofil",
-                profile_text: "Gründer und KI-Systemdirektor von Business Bots Solutions, einer KI-gestützten Beratungs- und Automatisierungsagentur. Kreativer Technologe mit 10 Jahren Erfahrung in Grafikdesign, 5 Jahren Arbeit mit KI-Systemen und 1 Jahr Leitung einer KI-Agentur.",
-                experience_title: "Berufserfahrung",
-                exp1_title: "KI-Beratung",
-                exp1_period: "Business Bots Solutions | 2023 - Heute",
-                exp1_tasks: "<li>Gründer und Leiter einer KI-gestützten Beratungsagentur</li><li>Engineering maßgeschneiderter Konversationsagenten und intelligenter Systeme</li><li>Architektur von End-to-End-KI-Lösungen ausgerichtet auf Geschäftsziele</li><li>Strategische Führung in Produktentwicklung und Kundenbetreuung</li>",
-                exp2_title: "App-Entwicklung",
-                exp2_period: "Business Bots Solutions | 2024 - Heute",
-                exp2_tasks: "<li>Aufbau von Full-Stack-Anwendungen mit Machine-Learning-Funktionen</li><li>Integration von Automatisierungs-Workflows in bestehende Geschäftsinfrastruktur</li><li>Transformation komplexer Anforderungen in skalierbare Web-Plattformen</li><li>Verbindung technischer Ausführung mit kreativer Vision über Projekte hinweg</li>",
-                exp3_title: "VIP-Assistent",
-                exp3_period: "Nikki Beach Mallorca | 2022 - 2025",
-                exp3_tasks: "<li>Koordination von Premium-Hospitality-Services in Luxus-Strandlocation</li><li>Gewährleistung nahtloser Gästeerlebnisse durch proaktiven Service</li><li>Zusammenarbeit mit internationalen Teams in schnellem Umfeld</li><li>Verfeinerung interpersoneller und Zeitmanagement-Fähigkeiten unter Druck</li>",
-                exp4_title: "Grafikdesign",
-                exp4_period: "Freelance | 2016 - 2026",
-                exp4_tasks: "<li>Gestaltung visueller Identitäten und Markensysteme für globale Kunden</li><li>Produktion von Multimedia-Inhalten über digitale und gedruckte Medien</li><li>Leitung kreativer Richtung vom Konzept bis zur finalen Ausführung</li><li>Beherrschung von Design-Tools und Entwicklung mit Industriestandards über ein Jahrzehnt</li>",
-                skills_title: "Berufliche Fähigkeiten",
-                ai_skills: "Künstliche Intelligenz",
-                design_skills: "Design",
-                dev_skills: "Frontend-Entwicklung",
-                automation_skills: "Automatisierung",
-                professional_skills: "Berufliche Fähigkeiten",
-                languages_title: "Sprachen",
-                spanish: "Spanisch",
-                english: "Englisch",
-                french: "Französisch",
-                native: "Muttersprache",
-                advanced: "Fortgeschritten",
-                achievements_title: "Erfolge",
-                achievement1_title: "KI-Systeme",
-                achievement1_desc: "5 Jahre Erfahrung in KI-Systemen, Agenten und Webentwicklung",
-                achievement2_title: "Grafikdesign",
-                achievement2_desc: "10 Jahre professionelle Design-Erfahrung",
-                achievement3_title: "Business Bots",
-                achievement3_desc: "Gründer und Leiter einer KI-gestützten Beratungsagentur",
-                achievement4_title: "Kreative Leitung",
-                achievement4_desc: "Leitung kreativer und technischer Teams für KI-Produkte",
-                contact_whatsapp: "Kontakt über WhatsApp",
-                footer_text: "© 2026 Elias J Perez. Alle Rechte vorbehalten.",
-                light_mode: "Heller Modus",
-                dark_mode: "Dunkler Modus"
-            },
-            it: {
-                nav_home: "Home",
-                nav_about: "Chi Sono",
-                nav_services: "Servizi",
-                nav_nfc: "Carte NFC",
-                nav_contact: "Contatto",
-                name: "Elias J Perez",
-                role: "Consulente IA & Designer",
-                location: "Palma di Maiorca",
-                profile_title: "Riepilogo Professionale",
-                profile_text: "Fondatore e Direttore dei Sistemi IA di Business Bots Solutions, un'agenzia di consulenza e automazione alimentata dall'IA. Tecnologo Creativo con 10 anni di esperienza nel graphic design, 5 anni di lavoro con sistemi IA, e 1 anno alla guida di un'agenzia IA.",
-                experience_title: "Esperienza Lavorativa",
-                exp1_title: "Consulenza IA",
-                exp1_period: "Business Bots Solutions | 2023 - Presente",
-                exp1_tasks: "<li>Fondatore e direttore di agenzia di consulenza alimentata dall'IA</li><li>Ingegneria di agenti conversazionali e sistemi intelligenti personalizzati</li><li>Architettura di soluzioni IA end-to-end allineate agli obiettivi aziendali</li><li>Leadership strategica nello sviluppo prodotti e consegna clienti</li>",
-                exp2_title: "Creazione App",
-                exp2_period: "Business Bots Solutions | 2024 - Presente",
-                exp2_tasks: "<li>Costruzione di applicazioni full-stack sfruttando capacità di machine learning</li><li>Integrazione di flussi di automazione nell'infrastruttura aziendale esistente</li><li>Trasformazione di requisiti complessi in piattaforme web scalabili</li><li>Collegamento tra esecuzione tecnica e visione creativa nei progetti</li>",
-                exp3_title: "Assistente VIP",
-                exp3_period: "Nikki Beach Mallorca | 2022 - 2025",
-                exp3_tasks: "<li>Coordinamento di servizi di ospitalità premium in locale di lusso sul mare</li><li>Garanzia di esperienze fluide per gli ospiti attraverso servizio proattivo</li><li>Collaborazione con team internazionali in ambiente dinamico</li><li>Perfezionamento di competenze interpersonali e gestione del tempo sotto pressione</li>",
-                exp4_title: "Graphic Design",
-                exp4_period: "Freelance | 2016 - 2026",
-                exp4_tasks: "<li>Creazione di identità visive e sistemi di brand per clienti globali</li><li>Produzione di contenuti multimediali su supporti digitali e stampati</li><li>Direzione creativa dal concept all'esecuzione finale</li><li>Padronanza di strumenti di design ed evoluzione con standard dell'industria per un decennio</li>",
-                skills_title: "Competenze Professionali",
-                ai_skills: "Intelligenza Artificiale",
-                design_skills: "Design",
-                dev_skills: "Sviluppo Frontend",
-                automation_skills: "Automazione",
-                professional_skills: "Competenze Professionali",
-                languages_title: "Lingue",
-                spanish: "Spagnolo",
-                english: "Inglese",
-                french: "Francese",
-                native: "Madrelingua",
-                advanced: "Avanzato",
-                achievements_title: "Risultati",
-                achievement1_title: "Sistemi IA",
-                achievement1_desc: "5 anni di esperienza in sistemi IA, agenti e sviluppo web",
-                achievement2_title: "Graphic Design",
-                achievement2_desc: "10 anni di esperienza professionale in design",
-                achievement3_title: "Business Bots",
-                achievement3_desc: "Fondatore e leader di agenzia di consulenza alimentata dall'IA",
-                achievement4_title: "Direzione Creativa",
-                achievement4_desc: "Guida di team creativi e tecnici per prodotti IA",
-                contact_whatsapp: "Contatta via WhatsApp",
-                footer_text: "© 2026 Elias J Perez. Tutti i diritti riservati.",
-                light_mode: "Modalità Chiara",
-                dark_mode: "Modalità Scura"
-            }
-        };
-
-        let currentLanguage = 'en';
-
-        // Initialize Matrix Background
-        function initMatrixBackground() {
-            const matrixBg = document.getElementById('matrixBg');
-            if (!matrixBg) return;
-            
-            const lines = 15;
-            
-            for (let i = 0; i < lines; i++) {
-                const line = document.createElement('div');
-                line.className = 'matrix-line';
-                line.style.left = Math.random() * 100 + '%';
-                line.style.animationDelay = Math.random() * 8 + 's';
-                line.style.animationDuration = (8 + Math.random() * 4) + 's';
-                matrixBg.appendChild(line);
-            }
-        }
-
-        // Theme Toggle Function
-        function toggleTheme() {
-            try {
-                const body = document.body;
-                const themeIcon = document.getElementById('themeIcon');
-                const themeText = document.getElementById('themeText');
-                
-                if (!themeIcon || !themeText) return;
-                
-                body.classList.toggle('light-mode');
-                
-                if (body.classList.contains('light-mode')) {
-                    themeIcon.textContent = '🌙';
-                    themeText.setAttribute('data-key', 'dark_mode');
-                    localStorage.setItem('theme', 'light');
-                } else {
-                    themeIcon.textContent = '☀';
-                    themeText.setAttribute('data-key', 'light_mode');
-                    localStorage.setItem('theme', 'dark');
-                }
-                
-                // Update text based on current language
-                const langData = translations[currentLanguage];
-                const key = themeText.getAttribute('data-key');
-                if (langData && langData[key]) {
-                    themeText.textContent = langData[key];
-                }
-            } catch (error) {
-                console.error('Error toggling theme:', error);
-            }
-        }
-
-        // Switch Language Function
-        function switchLanguage(lang) {
-            try {
-                if (lang === currentLanguage) return;
-                
-                currentLanguage = lang;
-                
-                // Update active button
-                document.querySelectorAll('.lang-btn').forEach(btn => {
-                    btn.classList.remove('active');
-                });
-                const activeBtn = document.querySelector(`[data-lang="${lang}"]`);
-                if (activeBtn) {
-                    activeBtn.classList.add('active');
-                }
-                
-                // Update content
-                const langData = translations[lang];
-                if (!langData) return;
-                
-                document.querySelectorAll('[data-key]').forEach(element => {
-                    const key = element.getAttribute('data-key');
-                    if (langData[key]) {
-                        if (key.includes('tasks')) {
-                            element.innerHTML = langData[key];
-                        } else if (key === 'profile_text') {
-                            element.innerHTML = langData[key];
-                        } else {
-                            element.textContent = langData[key];
-                        }
-                    }
-                });
-                
-                // Update document language
-                document.documentElement.lang = lang;
-            } catch (error) {
-                console.error('Error switching language:', error);
-            }
-        }
-
-        // Make functions globally accessible AFTER they're defined
-        window.toggleTheme = toggleTheme;
-        window.switchLanguage = switchLanguage;
-
-        // Intersection Observer for animations
-        function initScrollAnimations() {
-            try {
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('fade-in');
-                        }
-                    });
-                }, { threshold: 0.1 });
-
-                document.querySelectorAll('.timeline-item, .skill-category, .language-item, .achievement-card').forEach(el => {
-                    observer.observe(el);
-                });
-            } catch (error) {
-                console.error('Error initializing scroll animations:', error);
-            }
-        }
-
-        // Initialize everything when DOM is loaded
-        document.addEventListener('DOMContentLoaded', function() {
-            try {
-                initMatrixBackground();
-                initScrollAnimations();
-                
-                // Load saved theme
-                const savedTheme = localStorage.getItem('theme');
-                if (savedTheme === 'light') {
-                    document.body.classList.add('light-mode');
-                    const themeIcon = document.getElementById('themeIcon');
-                    const themeText = document.getElementById('themeText');
-                    if (themeIcon && themeText) {
-                        themeIcon.textContent = '🌙';
-                        themeText.setAttribute('data-key', 'dark_mode');
-                        themeText.textContent = translations[currentLanguage]['dark_mode'];
-                    }
-                }
-                
-                // Animate language progress bars
-                setTimeout(() => {
-                    document.querySelectorAll('.language-progress').forEach(bar => {
-                        const width = bar.style.width;
-                        bar.style.width = '0%';
-                        setTimeout(() => {
-                            bar.style.width = width;
-                        }, 100);
-                    });
-                }, 1000);
-            } catch (error) {
-                console.error('Error during initialization:', error);
-            }
-        });
-
-        // Smooth scroll for internal links
-        document.addEventListener('DOMContentLoaded', function() {
-            try {
-                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                    anchor.addEventListener('click', function (e) {
-                        e.preventDefault();
-                        const target = document.querySelector(this.getAttribute('href'));
-                        if (target) {
-                            target.scrollIntoView({
-                                behavior: 'smooth',
-                                block: 'start'
