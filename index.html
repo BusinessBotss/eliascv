@@ -3,1008 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Elias J Perez - AI Consultant & Designer">
+    <meta name="description" content="Elias J Perez - AI Consultant & Designer. Founder of Business Bots Solutions">
     <title>Elias J Perez - AI Consultant & Designer</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- JavaScript PRIMERO para que las funciones estén disponibles ANTES del HTML -->
     <script>
-        var currentLanguage = 'es';
-        var translations = {
-            es: {nav_home:"Inicio",nav_about:"Acerca de",nav_services:"Servicios",nav_nfc:"Tarjetas NFC",nav_contact:"Contacto",name:"Elias J Perez",role:"Consultor IA & Diseñador",location:"Palma de Mallorca",profile_title:"Resumen Profesional",profile_text:"Fundador y Director de Sistemas de IA de Business Bots Solutions, una agencia de consultoría y automatización impulsada por IA. Tecnólogo Creativo con 10 años de experiencia en diseño gráfico, 5 años trabajando con sistemas de IA, y 1 año liderando una agencia de IA.",experience_title:"Experiencia Laboral",exp1_title:"Consultoría IA",exp1_period:"Business Bots Solutions | 2023 - Presente",exp1_tasks:"<li>Fundador y director de agencia de consultoría impulsada por IA</li><li>Ingeniería de agentes conversacionales y sistemas inteligentes personalizados</li><li>Arquitectura de soluciones IA de extremo a extremo alineadas con objetivos empresariales</li><li>Liderazgo estratégico en desarrollo de productos y entrega al cliente</li>",exp2_title:"Creación de Aplicaciones",exp2_period:"Business Bots Solutions | 2024 - Presente",exp2_tasks:"<li>Construcción de aplicaciones full-stack aprovechando capacidades de machine learning</li><li>Integración de flujos de automatización en infraestructura empresarial existente</li><li>Transformación de requerimientos complejos en plataformas web escalables</li><li>Conexión de ejecución técnica con visión creativa en proyectos</li>",exp3_title:"Asistente VIP",exp3_period:"Nikki Beach Mallorca | 2022 - 2025",exp3_tasks:"<li>Coordinación de servicios de hospitalidad premium en venue de lujo frente al mar</li><li>Garantía de experiencias fluidas para huéspedes mediante servicio proactivo</li><li>Colaboración con equipos internacionales en entorno de ritmo acelerado</li><li>Refinamiento de habilidades interpersonales y gestión del tiempo bajo presión</li>",exp4_title:"Diseño Gráfico",exp4_period:"Freelance | 2016 - 2026",exp4_tasks:"<li>Creación de identidades visuales y sistemas de marca para clientes globales</li><li>Producción de contenido multimedia en medios digitales e impresos</li><li>Dirección creativa desde concepto hasta ejecución final</li><li>Dominio de herramientas de diseño y evolución con estándares de la industria durante una década</li>",skills_title:"Habilidades Profesionales",ai_skills:"Inteligencia Artificial",design_skills:"Diseño",dev_skills:"Desarrollo Frontend",automation_skills:"Automatización",professional_skills:"Habilidades Profesionales",languages_title:"Idiomas",spanish:"Español",english:"Inglés",french:"Francés",native:"Nativo",advanced:"Avanzado",achievements_title:"Historial de Logros",achievement1_title:"Sistemas IA",achievement1_desc:"5 años de experiencia en sistemas IA, agentes y desarrollo web",achievement2_title:"Diseño Gráfico",achievement2_desc:"10 años de experiencia profesional en diseño",achievement3_title:"Business Bots",achievement3_desc:"Fundador y líder de agencia de consultoría impulsada por IA",achievement4_title:"Dirección Creativa",achievement4_desc:"Liderando equipos creativos y técnicos para productos IA",contact_whatsapp:"Contactar por WhatsApp",footer_text:"© 2026 Elias J Perez. Todos los derechos reservados.",light_mode:"Modo Claro",dark_mode:"Modo Oscuro"},
-            en: {nav_home:"Home",nav_about:"About",nav_services:"Services",nav_nfc:"NFC Cards",nav_contact:"Contact",name:"Elias J Perez",role:"AI Consultant & Designer",location:"Palma de Mallorca",profile_title:"Professional Summary",profile_text:"Founder and AI Systems Director of Business Bots Solutions, an AI-powered consulting and automation agency. Creative Technologist with 10 years of experience in graphic design, 5 years working with AI systems, and 1 year leading an AI agency.",experience_title:"Working Experience",exp1_title:"AI Consulting",exp1_period:"Business Bots Solutions | 2023 - Present",exp1_tasks:"<li>Founded and direct AI-powered consulting agency</li><li>Engineer custom conversational agents and intelligent systems</li><li>Architect end-to-end AI solutions aligned with business objectives</li><li>Strategic leadership in product development and client delivery</li>",exp2_title:"App Creation",exp2_period:"Business Bots Solutions | 2024 - Present",exp2_tasks:"<li>Build full-stack applications leveraging machine learning capabilities</li><li>Integrate automation workflows into existing business infrastructure</li><li>Transform complex requirements into scalable web platforms</li><li>Bridge technical execution with creative vision across projects</li>",exp3_title:"VIP Assistant",exp3_period:"Nikki Beach Mallorca | 2022 - 2025",exp3_tasks:"<li>Coordinated premium hospitality services in luxury beachfront venue</li><li>Ensured seamless guest experiences through proactive service delivery</li><li>Collaborated with international teams in fast-paced environment</li><li>Refined interpersonal and time management skills under pressure</li>",exp4_title:"Graphic Design",exp4_period:"Freelance | 2016 - 2026",exp4_tasks:"<li>Crafted visual identities and brand systems for global clients</li><li>Produced multimedia content across digital and print mediums</li><li>Led creative direction from concept to final execution</li><li>Mastered design tools and evolved with industry standards over a decade</li>",skills_title:"Professional Skills",ai_skills:"Artificial Intelligence",design_skills:"Design",dev_skills:"Frontend Development",automation_skills:"Automation",professional_skills:"Professional Skills",languages_title:"Languages",spanish:"Spanish",english:"English",french:"French",native:"Native",advanced:"Advanced",achievements_title:"Track Record",achievement1_title:"AI Systems",achievement1_desc:"5 years of experience in AI systems, agents, and web development",achievement2_title:"Graphic Design",achievement2_desc:"10 years of professional design experience",achievement3_title:"Business Bots",achievement3_desc:"Founded and leading AI-powered consulting agency",achievement4_title:"Creative Direction",achievement4_desc:"Leading creative and technical teams for AI products",contact_whatsapp:"Contact via WhatsApp",footer_text:"© 2026 Elias J Perez. All rights reserved.",light_mode:"Light Mode",dark_mode:"Dark Mode"},
-            fr: {nav_home:"Accueil",nav_about:"À propos",nav_services:"Services",nav_nfc:"Cartes NFC",nav_contact:"Contact",name:"Elias J Perez",role:"Consultant IA & Designer",location:"Palma de Majorque",profile_title:"Résumé Professionnel",profile_text:"Fondateur et Directeur des Systèmes IA de Business Bots Solutions, une agence de conseil et d'automatisation alimentée par l'IA. Technologue Créatif avec 10 ans d'expérience en design graphique, 5 ans de travail avec des systèmes IA, et 1 an à la tête d'une agence IA.",experience_title:"Expérience Professionnelle",exp1_title:"Conseil IA",exp1_period:"Business Bots Solutions | 2023 - Présent",exp1_tasks:"<li>Fondateur et directeur d'agence de conseil alimentée par l'IA</li><li>Ingénierie d'agents conversationnels et systèmes intelligents sur mesure</li><li>Architecture de solutions IA de bout en bout alignées sur les objectifs commerciaux</li><li>Leadership stratégique en développement de produits et livraison client</li>",exp2_title:"Création d'Applications",exp2_period:"Business Bots Solutions | 2024 - Présent",exp2_tasks:"<li>Construction d'applications full-stack exploitant les capacités de machine learning</li><li>Intégration de flux d'automatisation dans l'infrastructure commerciale existante</li><li>Transformation d'exigences complexes en plateformes web évolutives</li><li>Pont entre exécution technique et vision créative à travers les projets</li>",exp3_title:"Assistant VIP",exp3_period:"Nikki Beach Mallorca | 2022 - 2025",exp3_tasks:"<li>Coordination de services d'hospitalité premium dans lieu de luxe en bord de mer</li><li>Garantie d'expériences fluides pour les invités par service proactif</li><li>Collaboration avec équipes internationales dans environnement dynamique</li><li>Perfectionnement des compétences interpersonales et gestion du temps sous pression</li>",exp4_title:"Design Graphique",exp4_period:"Freelance | 2016 - 2026",exp4_tasks:"<li>Création d'identités visuelles et systèmes de marque pour clients mondiaux</li><li>Production de contenu multimédia sur supports numériques et imprimés</li><li>Direction créative du concept à l'exécution finale</li><li>Maîtrise des outils de design et évolution avec les standards de l'industrie pendant une décennie</li>",skills_title:"Compétences Professionnelles",ai_skills:"Intelligence Artificielle",design_skills:"Design",dev_skills:"Développement Frontend",automation_skills:"Automatisation",professional_skills:"Compétences Professionnelles",languages_title:"Langues",spanish:"Espagnol",english:"Anglais",french:"Français",native:"Natif",advanced:"Avancé",achievements_title:"Bilan des Réalisations",achievement1_title:"Systèmes IA",achievement1_desc:"5 ans d'expérience en systèmes IA, agents et développement web",achievement2_title:"Design Graphique",achievement2_desc:"10 ans d'expérience professionnelle en design",achievement3_title:"Business Bots",achievement3_desc:"Fondateur et dirigeant d'une agence de conseil alimentée par l'IA",achievement4_title:"Direction Créative",achievement4_desc:"Direction d'équipes créatives et techniques pour produits IA",contact_whatsapp:"Contacter via WhatsApp",footer_text:"© 2026 Elias J Perez. Tous droits réservés.",light_mode:"Mode Clair",dark_mode:"Mode Sombre"},
-            de: {nav_home:"Startseite",nav_about:"Über",nav_services:"Dienstleistungen",nav_nfc:"NFC-Karten",nav_contact:"Kontakt",name:"Elias J Perez",role:"KI-Berater & Designer",location:"Palma de Mallorca",profile_title:"Berufsprofil",profile_text:"Gründer und KI-Systemdirektor von Business Bots Solutions, einer KI-gestützten Beratungs- und Automatisierungsagentur. Kreativer Technologe mit 10 Jahren Erfahrung in Grafikdesign, 5 Jahren Arbeit mit KI-Systemen und 1 Jahr Leitung einer KI-Agentur.",experience_title:"Berufserfahrung",exp1_title:"KI-Beratung",exp1_period:"Business Bots Solutions | 2023 - Heute",exp1_tasks:"<li>Gründer und Leiter einer KI-gestützten Beratungsagentur</li><li>Engineering maßgeschneiderter Konversationsagenten und intelligenter Systeme</li><li>Architektur von End-to-End-KI-Lösungen ausgerichtet auf Geschäftsziele</li><li>Strategische Führung in Produktentwicklung und Kundenbetreuung</li>",exp2_title:"App-Entwicklung",exp2_period:"Business Bots Solutions | 2024 - Heute",exp2_tasks:"<li>Aufbau von Full-Stack-Anwendungen mit Machine-Learning-Funktionen</li><li>Integration von Automatisierungs-Workflows in bestehende Geschäftsinfrastruktur</li><li>Transformation komplexer Anforderungen in skalierbare Web-Plattformen</li><li>Verbindung technischer Ausführung mit kreativer Vision über Projekte hinweg</li>",exp3_title:"VIP-Assistent",exp3_period:"Nikki Beach Mallorca | 2022 - 2025",exp3_tasks:"<li>Koordination von Premium-Hospitality-Services in Luxus-Strandlocation</li><li>Gewährleistung nahtloser Gästeerlebnisse durch proaktiven Service</li><li>Zusammenarbeit mit internationalen Teams in schnellem Umfeld</li><li>Verfeinerung interpersoneller und Zeitmanagement-Fähigkeiten unter Druck</li>",exp4_title:"Grafikdesign",exp4_period:"Freelance | 2016 - 2026",exp4_tasks:"<li>Gestaltung visueller Identitäten und Markensysteme für globale Kunden</li><li>Produktion von Multimedia-Inhalten über digitale und gedruckte Medien</li><li>Leitung kreativer Richtung vom Konzept bis zur finalen Ausführung</li><li>Beherrschung von Design-Tools und Entwicklung mit Industriestandards über ein Jahrzehnt</li>",skills_title:"Berufliche Fähigkeiten",ai_skills:"Künstliche Intelligenz",design_skills:"Design",dev_skills:"Frontend-Entwicklung",automation_skills:"Automatisierung",professional_skills:"Berufliche Fähigkeiten",languages_title:"Sprachen",spanish:"Spanisch",english:"Englisch",french:"Französisch",native:"Muttersprache",advanced:"Fortgeschritten",achievements_title:"Erfolge",achievement1_title:"KI-Systeme",achievement1_desc:"5 Jahre Erfahrung in KI-Systemen, Agenten und Webentwicklung",achievement2_title:"Grafikdesign",achievement2_desc:"10 Jahre professionelle Design-Erfahrung",achievement3_title:"Business Bots",achievement3_desc:"Gründer und Leiter einer KI-gestützten Beratungsagentur",achievement4_title:"Kreative Leitung",achievement4_desc:"Leitung kreativer und technischer Teams für KI-Produkte",contact_whatsapp:"Kontakt über WhatsApp",footer_text:"© 2026 Elias J Perez. Alle Rechte vorbehalten.",light_mode:"Heller Modus",dark_mode:"Dunkler Modus"},
-            it: {nav_home:"Home",nav_about:"Chi Sono",nav_services:"Servizi",nav_nfc:"Carte NFC",nav_contact:"Contatto",name:"Elias J Perez",role:"Consulente IA & Designer",location:"Palma di Maiorca",profile_title:"Riepilogo Professionale",profile_text:"Fondatore e Direttore dei Sistemi IA di Business Bots Solutions, un'agenzia di consulenza e automazione alimentata dall'IA. Tecnologo Creativo con 10 anni di esperienza nel graphic design, 5 anni di lavoro con sistemi IA, e 1 anno alla guida di un'agenzia IA.",experience_title:"Esperienza Lavorativa",exp1_title:"Consulenza IA",exp1_period:"Business Bots Solutions | 2023 - Presente",exp1_tasks:"<li>Fondatore e direttore di agenzia di consulenza alimentata dall'IA</li><li>Ingegneria di agenti conversazionali e sistemi intelligenti personalizzati</li><li>Architettura di soluzioni IA end-to-end allineate agli obiettivi aziendali</li><li>Leadership strategica nello sviluppo prodotti e consegna clienti</li>",exp2_title:"Creazione App",exp2_period:"Business Bots Solutions | 2024 - Presente",exp2_tasks:"<li>Costruzione di applicazioni full-stack sfruttando capacità di machine learning</li><li>Integrazione di flussi di automazione nell'infrastruttura aziendale esistente</li><li>Trasformazione di requisiti complessi in piattaforme web scalabili</li><li>Collegamento tra esecuzione tecnica e visione creativa nei progetti</li>",exp3_title:"Assistente VIP",exp3_period:"Nikki Beach Mallorca | 2022 - 2025",exp3_tasks:"<li>Coordinamento di servizi di ospitalità premium in locale di lusso sul mare</li><li>Garanzia di esperienze fluide per gli ospiti attraverso servizio proattivo</li><li>Collaborazione con team internazionali in ambiente dinamico</li><li>Perfezionamento di competenze interpersonali e gestione del tempo sotto pressione</li>",exp4_title:"Graphic Design",exp4_period:"Freelance | 2016 - 2026",exp4_tasks:"<li>Creazione di identità visive e sistemi di brand per clienti globali</li><li>Produzione di contenuti multimediali su supporti digitali e stampati</li><li>Direzione creativa dal concept all'esecuzione finale</li><li>Padronanza di strumenti di design ed evoluzione con standard dell'industria per un decennio</li>",skills_title:"Competenze Professionali",ai_skills:"Intelligenza Artificiale",design_skills:"Design",dev_skills:"Sviluppo Frontend",automation_skills:"Automazione",professional_skills:"Competenze Professionali",languages_title:"Lingue",spanish:"Spagnolo",english:"Inglese",french:"Francese",native:"Madrelingua",advanced:"Avanzato",achievements_title:"Risultati",achievement1_title:"Sistemi IA",achievement1_desc:"5 anni di esperienza in sistemi IA, agenti e sviluppo web",achievement2_title:"Graphic Design",achievement2_desc:"10 anni di esperienza professionale in design",achievement3_title:"Business Bots",achievement3_desc:"Fondatore e leader di agenzia di consulenza alimentata dall'IA",achievement4_title:"Direzione Creativa",achievement4_desc:"Guida di team creativi e tecnici per prodotti IA",contact_whatsapp:"Contatta via WhatsApp",footer_text:"© 2026 Elias J Perez. Tutti i diritti riservati.",light_mode:"Modalità Chiara",dark_mode:"Modalità Scura"}
-        };
-        function switchLanguage(lang){if(!lang||lang===currentLanguage)return;currentLanguage=lang;var buttons=document.querySelectorAll('.lang-btn');for(var i=0;i<buttons.length;i++){buttons[i].classList.remove('active');if(buttons[i].getAttribute('data-lang')===lang){buttons[i].classList.add('active');}}var langData=translations[lang];if(!langData)return;var elements=document.querySelectorAll('[data-key]');for(var i=0;i<elements.length;i++){var element=elements[i];var key=element.getAttribute('data-key');if(langData[key]){if(key.indexOf('tasks')!==-1||key==='profile_text'){element.innerHTML=langData[key];}else{element.textContent=langData[key];}}}document.documentElement.lang=lang;}
-        function toggleTheme(){var body=document.body;var themeIcon=document.getElementById('themeIcon');var themeText=document.getElementById('themeText');if(!themeIcon||!themeText)return;body.classList.toggle('light-mode');if(body.classList.contains('light-mode')){themeIcon.textContent='🌙';themeText.setAttribute('data-key','dark_mode');try{localStorage.setItem('theme','light');}catch(e){}}else{themeIcon.textContent='☀';themeText.setAttribute('data-key','light_mode');try{localStorage.setItem('theme','dark');}catch(e){}}var langData=translations[currentLanguage];var key=themeText.getAttribute('data-key');if(langData&&langData[key]){themeText.textContent=langData[key];}}
-        function initializeApp(){var matrixBg=document.getElementById('matrixBg');if(matrixBg){for(var i=0;i<15;i++){var line=document.createElement('div');line.className='matrix-line';line.style.left=Math.random()*100+'%';line.style.animationDelay=Math.random()*8+'s';line.style.animationDuration=(8+Math.random()*4)+'s';matrixBg.appendChild(line);}}try{var savedTheme=localStorage.getItem('theme');if(savedTheme==='light'){document.body.classList.add('light-mode');var icon=document.getElementById('themeIcon');var text=document.getElementById('themeText');if(icon&&text){icon.textContent='🌙';text.setAttribute('data-key','dark_mode');text.textContent=translations[currentLanguage]['dark_mode'];}}}catch(e){}setTimeout(function(){var bars=document.querySelectorAll('.language-progress');for(var i=0;i<bars.length;i++){var width=bars[i].style.width;bars[i].style.width='0%';(function(bar,w){setTimeout(function(){bar.style.width=w;},100);})(bars[i],width);}},1000);if('IntersectionObserver'in window){var observer=new IntersectionObserver(function(entries){for(var i=0;i<entries.length;i++){if(entries[i].isIntersecting){entries[i].target.classList.add('fade-in');}}},{threshold:0.1});var animatedElements=document.querySelectorAll('.timeline-item, .skill-category, .language-item, .achievement-card');for(var i=0;i<animatedElements.length;i++){observer.observe(animatedElements[i]);}}}
-        if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',initializeApp);}else{initializeApp();}
+        var currentLanguage='es';
+        var translations={es:{nav_home:"Inicio",nav_about:"Acerca de",nav_services:"Servicios",nav_nfc:"Tarjetas NFC",nav_contact:"Contacto",name:"Elias J Perez",role:"Consultor IA & Diseñador",location:"Palma de Mallorca",profile_title:"Resumen Profesional",profile_text:"Fundador y Director de Sistemas de IA de Business Bots Solutions, una agencia de consultoría y automatización impulsada por IA. Tecnólogo Creativo con 10 años de experiencia en diseño gráfico, 5 años trabajando con sistemas de IA, y 1 año liderando una agencia de IA.",experience_title:"Experiencia Laboral",exp1_title:"Consultoría IA",exp1_period:"Business Bots Solutions | 2023 - Presente",exp1_tasks:"<li>Fundador y director de agencia de consultoría impulsada por IA</li><li>Ingeniería de agentes conversacionales y sistemas inteligentes personalizados</li><li>Arquitectura de soluciones IA de extremo a extremo alineadas con objetivos empresariales</li><li>Liderazgo estratégico en desarrollo de productos y entrega al cliente</li>",exp2_title:"Creación de Aplicaciones",exp2_period:"Business Bots Solutions | 2024 - Presente",exp2_tasks:"<li>Construcción de aplicaciones full-stack aprovechando capacidades de machine learning</li><li>Integración de flujos de automatización en infraestructura empresarial existente</li><li>Transformación de requerimientos complejos en plataformas web escalables</li><li>Conexión de ejecución técnica con visión creativa en proyectos</li>",exp3_title:"Asistente VIP",exp3_period:"Nikki Beach Mallorca | 2022 - 2025",exp3_tasks:"<li>Coordinación de servicios de hospitalidad premium en venue de lujo frente al mar</li><li>Garantía de experiencias fluidas para huéspedes mediante servicio proactivo</li><li>Colaboración con equipos internacionales en entorno de ritmo acelerado</li><li>Refinamiento de habilidades interpersonales y gestión del tiempo bajo presión</li>",exp4_title:"Diseño Gráfico",exp4_period:"Freelance | 2016 - 2026",exp4_tasks:"<li>Creación de identidades visuales y sistemas de marca para clientes globales</li><li>Producción de contenido multimedia en medios digitales e impresos</li><li>Dirección creativa desde concepto hasta ejecución final</li><li>Dominio de herramientas de diseño y evolución con estándares de la industria durante una década</li>",skills_title:"Habilidades Profesionales",ai_skills:"Inteligencia Artificial",design_skills:"Diseño",dev_skills:"Desarrollo Frontend",automation_skills:"Automatización",professional_skills:"Habilidades Profesionales",languages_title:"Idiomas",spanish:"Español",english:"Inglés",french:"Francés",native:"Nativo",advanced:"Avanzado",achievements_title:"Historial de Logros",achievement1_title:"Sistemas IA",achievement1_desc:"5 años de experiencia en sistemas IA, agentes y desarrollo web",achievement2_title:"Diseño Gráfico",achievement2_desc:"10 años de experiencia profesional en diseño",achievement3_title:"Business Bots",achievement3_desc:"Fundador y líder de agencia de consultoría impulsada por IA",achievement4_title:"Dirección Creativa",achievement4_desc:"Liderando equipos creativos y técnicos para productos IA",contact_whatsapp:"Contactar por WhatsApp",footer_text:"© 2026 Elias J Perez. Todos los derechos reservados.",light_mode:"Modo Claro",dark_mode:"Modo Oscuro"},en:{nav_home:"Home",nav_about:"About",nav_services:"Services",nav_nfc:"NFC Cards",nav_contact:"Contact",name:"Elias J Perez",role:"AI Consultant & Designer",location:"Palma de Mallorca",profile_title:"Professional Summary",profile_text:"Founder and AI Systems Director of Business Bots Solutions, an AI-powered consulting and automation agency. Creative Technologist with 10 years of experience in graphic design, 5 years working with AI systems, and 1 year leading an AI agency.",experience_title:"Working Experience",exp1_title:"AI Consulting",exp1_period:"Business Bots Solutions | 2023 - Present",exp1_tasks:"<li>Founded and direct AI-powered consulting agency</li><li>Engineer custom conversational agents and intelligent systems</li><li>Architect end-to-end AI solutions aligned with business objectives</li><li>Strategic leadership in product development and client delivery</li>",exp2_title:"App Creation",exp2_period:"Business Bots Solutions | 2024 - Present",exp2_tasks:"<li>Build full-stack applications leveraging machine learning capabilities</li><li>Integrate automation workflows into existing business infrastructure</li><li>Transform complex requirements into scalable web platforms</li><li>Bridge technical execution with creative vision across projects</li>",exp3_title:"VIP Assistant",exp3_period:"Nikki Beach Mallorca | 2022 - 2025",exp3_tasks:"<li>Coordinated premium hospitality services in luxury beachfront venue</li><li>Ensured seamless guest experiences through proactive service delivery</li><li>Collaborated with international teams in fast-paced environment</li><li>Refined interpersonal and time management skills under pressure</li>",exp4_title:"Graphic Design",exp4_period:"Freelance | 2016 - 2026",exp4_tasks:"<li>Crafted visual identities and brand systems for global clients</li><li>Produced multimedia content across digital and print mediums</li><li>Led creative direction from concept to final execution</li><li>Mastered design tools and evolved with industry standards over a decade</li>",skills_title:"Professional Skills",ai_skills:"Artificial Intelligence",design_skills:"Design",dev_skills:"Frontend Development",automation_skills:"Automation",professional_skills:"Professional Skills",languages_title:"Languages",spanish:"Spanish",english:"English",french:"French",native:"Native",advanced:"Advanced",achievements_title:"Track Record",achievement1_title:"AI Systems",achievement1_desc:"5 years of experience in AI systems, agents, and web development",achievement2_title:"Graphic Design",achievement2_desc:"10 years of professional design experience",achievement3_title:"Business Bots",achievement3_desc:"Founded and leading AI-powered consulting agency",achievement4_title:"Creative Direction",achievement4_desc:"Leading creative and technical teams for AI products",contact_whatsapp:"Contact via WhatsApp",footer_text:"© 2026 Elias J Perez. All rights reserved.",light_mode:"Light Mode",dark_mode:"Dark Mode"},fr:{nav_home:"Accueil",nav_about:"À propos",nav_services:"Services",nav_nfc:"Cartes NFC",nav_contact:"Contact",name:"Elias J Perez",role:"Consultant IA & Designer",location:"Palma de Majorque",profile_title:"Résumé Professionnel",profile_text:"Fondateur et Directeur des Systèmes IA de Business Bots Solutions, une agence de conseil et d'automatisation alimentée par l'IA. Technologue Créatif avec 10 ans d'expérience en design graphique, 5 ans de travail avec des systèmes IA, et 1 an à la tête d'une agence IA.",experience_title:"Expérience Professionnelle",exp1_title:"Conseil IA",exp1_period:"Business Bots Solutions | 2023 - Présent",exp1_tasks:"<li>Fondateur et directeur d'agence de conseil alimentée par l'IA</li><li>Ingénierie d'agents conversationnels et systèmes intelligents sur mesure</li><li>Architecture de solutions IA de bout en bout alignées sur les objectifs commerciaux</li><li>Leadership stratégique en développement de produits et livraison client</li>",exp2_title:"Création d'Applications",exp2_period:"Business Bots Solutions | 2024 - Présent",exp2_tasks:"<li>Construction d'applications full-stack exploitant les capacités de machine learning</li><li>Intégration de flux d'automatisation dans l'infrastructure commerciale existante</li><li>Transformation d'exigences complexes en plateformes web évolutives</li><li>Pont entre exécution technique et vision créative à travers les projets</li>",exp3_title:"Assistant VIP",exp3_period:"Nikki Beach Mallorca | 2022 - 2025",exp3_tasks:"<li>Coordination de services d'hospitalité premium dans lieu de luxe en bord de mer</li><li>Garantie d'expériences fluides pour les invités par service proactif</li><li>Collaboration avec équipes internationales dans environnement dynamique</li><li>Perfectionnement des compétences interpersonnelles et gestion du temps sous pression</li>",exp4_title:"Design Graphique",exp4_period:"Freelance | 2016 - 2026",exp4_tasks:"<li>Création d'identités visuelles et systèmes de marque pour clients mondiaux</li><li>Production de contenu multimédia sur supports numériques et imprimés</li><li>Direction créative du concept à l'exécution finale</li><li>Maîtrise des outils de design et évolution avec les standards de l'industrie pendant une décennie</li>",skills_title:"Compétences Professionnelles",ai_skills:"Intelligence Artificielle",design_skills:"Design",dev_skills:"Développement Frontend",automation_skills:"Automatisation",professional_skills:"Compétences Professionnelles",languages_title:"Langues",spanish:"Espagnol",english:"Anglais",french:"Français",native:"Natif",advanced:"Avancé",achievements_title:"Bilan des Réalisations",achievement1_title:"Systèmes IA",achievement1_desc:"5 ans d'expérience en systèmes IA, agents et développement web",achievement2_title:"Design Graphique",achievement2_desc:"10 ans d'expérience professionnelle en design",achievement3_title:"Business Bots",achievement3_desc:"Fondateur et dirigeant d'une agence de conseil alimentée par l'IA",achievement4_title:"Direction Créative",achievement4_desc:"Direction d'équipes créatives et techniques pour produits IA",contact_whatsapp:"Contacter via WhatsApp",footer_text:"© 2026 Elias J Perez. Tous droits réservés.",light_mode:"Mode Clair",dark_mode:"Mode Sombre"},de:{nav_home:"Startseite",nav_about:"Über",nav_services:"Dienstleistungen",nav_nfc:"NFC-Karten",nav_contact:"Kontakt",name:"Elias J Perez",role:"KI-Berater & Designer",location:"Palma de Mallorca",profile_title:"Berufsprofil",profile_text:"Gründer und KI-Systemdirektor von Business Bots Solutions, einer KI-gestützten Beratungs- und Automatisierungsagentur. Kreativer Technologe mit 10 Jahren Erfahrung in Grafikdesign, 5 Jahren Arbeit mit KI-Systemen und 1 Jahr Leitung einer KI-Agentur.",experience_title:"Berufserfahrung",exp1_title:"KI-Beratung",exp1_period:"Business Bots Solutions | 2023 - Heute",exp1_tasks:"<li>Gründer und Leiter einer KI-gestützten Beratungsagentur</li><li>Engineering maßgeschneiderter Konversationsagenten und intelligenter Systeme</li><li>Architektur von End-to-End-KI-Lösungen ausgerichtet auf Geschäftsziele</li><li>Strategische Führung in Produktentwicklung und Kundenbetreuung</li>",exp2_title:"App-Entwicklung",exp2_period:"Business Bots Solutions | 2024 - Heute",exp2_tasks:"<li>Aufbau von Full-Stack-Anwendungen mit Machine-Learning-Funktionen</li><li>Integration von Automatisierungs-Workflows in bestehende Geschäftsinfrastruktur</li><li>Transformation komplexer Anforderungen in skalierbare Web-Plattformen</li><li>Verbindung technischer Ausführung mit kreativer Vision über Projekte hinweg</li>",exp3_title:"VIP-Assistent",exp3_period:"Nikki Beach Mallorca | 2022 - 2025",exp3_tasks:"<li>Koordination von Premium-Hospitality-Services in Luxus-Strandlocation</li><li>Gewährleistung nahtloser Gästeerlebnisse durch proaktiven Service</li><li>Zusammenarbeit mit internationalen Teams in schnellem Umfeld</li><li>Verfeinerung interpersoneller und Zeitmanagement-Fähigkeiten unter Druck</li>",exp4_title:"Grafikdesign",exp4_period:"Freelance | 2016 - 2026",exp4_tasks:"<li>Gestaltung visueller Identitäten und Markensysteme für globale Kunden</li><li>Produktion von Multimedia-Inhalten über digitale und gedruckte Medien</li><li>Leitung kreativer Richtung vom Konzept bis zur finalen Ausführung</li><li>Beherrschung von Design-Tools und Entwicklung mit Industriestandards über ein Jahrzehnt</li>",skills_title:"Berufliche Fähigkeiten",ai_skills:"Künstliche Intelligenz",design_skills:"Design",dev_skills:"Frontend-Entwicklung",automation_skills:"Automatisierung",professional_skills:"Berufliche Fähigkeiten",languages_title:"Sprachen",spanish:"Spanisch",english:"Englisch",french:"Französisch",native:"Muttersprache",advanced:"Fortgeschritten",achievements_title:"Erfolge",achievement1_title:"KI-Systeme",achievement1_desc:"5 Jahre Erfahrung in KI-Systemen, Agenten und Webentwicklung",achievement2_title:"Grafikdesign",achievement2_desc:"10 Jahre professionelle Design-Erfahrung",achievement3_title:"Business Bots",achievement3_desc:"Gründer und Leiter einer KI-gestützten Beratungsagentur",achievement4_title:"Kreative Leitung",achievement4_desc:"Leitung kreativer und technischer Teams für KI-Produkte",contact_whatsapp:"Kontakt über WhatsApp",footer_text:"© 2026 Elias J Perez. Alle Rechte vorbehalten.",light_mode:"Heller Modus",dark_mode:"Dunkler Modus"},it:{nav_home:"Home",nav_about:"Chi Sono",nav_services:"Servizi",nav_nfc:"Carte NFC",nav_contact:"Contatto",name:"Elias J Perez",role:"Consulente IA & Designer",location:"Palma di Maiorca",profile_title:"Riepilogo Professionale",profile_text:"Fondatore e Direttore dei Sistemi IA di Business Bots Solutions, un'agenzia di consulenza e automazione alimentata dall'IA. Tecnologo Creativo con 10 anni di esperienza nel graphic design, 5 anni di lavoro con sistemi IA, e 1 anno alla guida di un'agenzia IA.",experience_title:"Esperienza Lavorativa",exp1_title:"Consulenza IA",exp1_period:"Business Bots Solutions | 2023 - Presente",exp1_tasks:"<li>Fondatore e direttore di agenzia di consulenza alimentata dall'IA</li><li>Ingegneria di agenti conversazionali e sistemi intelligenti personalizzati</li><li>Architettura di soluzioni IA end-to-end allineate agli obiettivi aziendali</li><li>Leadership strategica nello sviluppo prodotti e consegna clienti</li>",exp2_title:"Creazione App",exp2_period:"Business Bots Solutions | 2024 - Presente",exp2_tasks:"<li>Costruzione di applicazioni full-stack sfruttando capacità di machine learning</li><li>Integrazione di flussi di automazione nell'infrastruttura aziendale esistente</li><li>Trasformazione di requisiti complessi in piattaforme web scalabili</li><li>Collegamento tra esecuzione tecnica e visione creativa nei progetti</li>",exp3_title:"Assistente VIP",exp3_period:"Nikki Beach Mallorca | 2022 - 2025",exp3_tasks:"<li>Coordinamento di servizi di ospitalità premium in locale di lusso sul mare</li><li>Garanzia di esperienze fluide per gli ospiti attraverso servizio proattivo</li><li>Collaborazione con team internazionali in ambiente dinamico</li><li>Perfezionamento di competenze interpersonali e gestione del tempo sotto pressione</li>",exp4_title:"Graphic Design",exp4_period:"Freelance | 2016 - 2026",exp4_tasks:"<li>Creazione di identità visive e sistemi di brand per clienti globali</li><li>Produzione di contenuti multimediali su supporti digitali e stampati</li><li>Direzione creativa dal concept all'esecuzione finale</li><li>Padronanza di strumenti di design ed evoluzione con standard dell'industria per un decennio</li>",skills_title:"Competenze Professionali",ai_skills:"Intelligenza Artificiale",design_skills:"Design",dev_skills:"Sviluppo Frontend",automation_skills:"Automazione",professional_skills:"Competenze Professionali",languages_title:"Lingue",spanish:"Spagnolo",english:"Inglese",french:"Francese",native:"Madrelingua",advanced:"Avanzato",achievements_title:"Risultati",achievement1_title:"Sistemi IA",achievement1_desc:"5 anni di esperienza in sistemi IA, agenti e sviluppo web",achievement2_title:"Graphic Design",achievement2_desc:"10 anni di esperienza professionale in design",achievement3_title:"Business Bots",achievement3_desc:"Fondatore e leader di agenzia di consulenza alimentata dall'IA",achievement4_title:"Direzione Creativa",achievement4_desc:"Guida di team creativi e tecnici per prodotti IA",contact_whatsapp:"Contatta via WhatsApp",footer_text:"© 2026 Elias J Perez. Tutti i diritti riservati.",light_mode:"Modalità Chiara",dark_mode:"Modalità Scura"}};
+        function switchLanguage(lang){if(!lang||lang===currentLanguage)return;currentLanguage=lang;var buttons=document.querySelectorAll('.lang-btn');for(var i=0;i<buttons.length;i++){buttons[i].classList.remove('active');if(buttons[i].getAttribute('data-lang')===lang)buttons[i].classList.add('active')}var langData=translations[lang];if(!langData)return;var elements=document.querySelectorAll('[data-key]');for(var i=0;i<elements.length;i++){var element=elements[i];var key=element.getAttribute('data-key');if(langData[key]){if(key.indexOf('tasks')!==-1||key==='profile_text')element.innerHTML=langData[key];else element.textContent=langData[key]}}document.documentElement.lang=lang}
+        function toggleTheme(){var body=document.body;var themeIcon=document.getElementById('themeIcon');var themeText=document.getElementById('themeText');if(!themeIcon||!themeText)return;body.classList.toggle('light-mode');if(body.classList.contains('light-mode')){themeIcon.textContent='🌙';themeText.setAttribute('data-key','dark_mode');try{localStorage.setItem('theme','light')}catch(e){}}else{themeIcon.textContent='☀';themeText.setAttribute('data-key','light_mode');try{localStorage.setItem('theme','dark')}catch(e){}}var langData=translations[currentLanguage];var key=themeText.getAttribute('data-key');if(langData&&langData[key])themeText.textContent=langData[key]}
+        function initializeApp(){var matrixBg=document.getElementById('matrixBg');if(matrixBg){for(var i=0;i<15;i++){var line=document.createElement('div');line.className='matrix-line';line.style.left=Math.random()*100+'%';line.style.animationDelay=Math.random()*8+'s';line.style.animationDuration=(8+Math.random()*4)+'s';matrixBg.appendChild(line)}}try{var savedTheme=localStorage.getItem('theme');if(savedTheme==='light'){document.body.classList.add('light-mode');var icon=document.getElementById('themeIcon');var text=document.getElementById('themeText');if(icon&&text){icon.textContent='🌙';text.setAttribute('data-key','dark_mode');text.textContent=translations[currentLanguage]['dark_mode']}}}catch(e){}setTimeout(function(){var bars=document.querySelectorAll('.language-progress');for(var i=0;i<bars.length;i++){var width=bars[i].style.width;bars[i].style.width='0%';(function(bar,w){setTimeout(function(){bar.style.width=w},100)})(bars[i],width)}},1000);if('IntersectionObserver'in window){var observer=new IntersectionObserver(function(entries){for(var i=0;i<entries.length;i++){if(entries[i].isIntersecting)entries[i].target.classList.add('fade-in')}},{threshold:0.1});var animatedElements=document.querySelectorAll('.timeline-item, .skill-category, .language-item, .achievement-card');for(var i=0;i<animatedElements.length;i++)observer.observe(animatedElements[i])}}
+        if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',initializeApp)}else{initializeApp()}
     </script>
+    
     <style>
-        :root {
-            --bg-primary: #000000;
-            --text-primary: #ffffff;
-            --text-secondary: #ffffff80;
-            --accent-start: #6bf21d;
-            --accent-end: #00ffe1;
-            --glass-bg: #111111cc;
-            --divider: #ffffff20;
-            --hover-scale: 1.05;
-        }
-
-        /* Light Mode Variables */
-        body.light-mode {
-            --bg-primary: #ffffff;
-            --text-primary: #000000;
-            --text-secondary: #00000080;
-            --glass-bg: #f8f9facc;
-            --divider: #00000020;
-        }
-
-        body.light-mode .matrix-bg {
-            opacity: 0.05;
-        }
-
-        body.light-mode .matrix-line {
-            background: linear-gradient(to bottom, transparent, #333333, transparent);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.6;
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            text-size-adjust: 100%;
-            -webkit-text-size-adjust: 100%;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 0 15px;
-            }
-        }
-
-        /* Matrix Background Effect */
-        .matrix-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: -1;
-            opacity: 0.1;
-        }
-
-        .matrix-line {
-            position: absolute;
-            width: 2px;
-            height: 100px;
-            background: linear-gradient(to bottom, transparent, var(--accent-start), transparent);
-            animation: matrix-fall 8s linear infinite;
-        }
-
-        @keyframes matrix-fall {
-            0% { transform: translateY(-100px); opacity: 0; }
-            10% { opacity: 1; }
-            90% { opacity: 1; }
-            100% { transform: translateY(100vh); opacity: 0; }
-        }
-
-        /* Navigation */
-        .nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 999;
-            background: var(--glass-bg);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid var(--divider);
-            padding: 15px 0;
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .nav-link {
-            color: var(--text-secondary);
-            text-decoration: none;
-            padding: 8px 16px;
-            border-radius: 20px;
-            transition: all 0.3s ease;
-            font-weight: 500;
-            display: inline-block;
-            white-space: nowrap;
-        }
-
-        .nav-link:hover {
-            background: var(--divider);
-            color: var(--text-primary);
-        }
-
-        /* Theme Toggle */
-        .theme-toggle {
-            background: transparent;
-            border: 1px solid var(--divider);
-            border-radius: 25px;
-            padding: 8px 16px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            color: var(--text-secondary);
-        }
-
-        .theme-toggle:hover {
-            background: var(--divider);
-            color: var(--text-primary);
-        }
-
-        /* Language Selector */
-        .lang-selector {
-            display: flex;
-            gap: 8px;
-            background: var(--glass-bg);
-            backdrop-filter: blur(10px);
-            border-radius: 25px;
-            padding: 8px;
-            border: 1px solid var(--divider);
-        }
-
-        .lang-btn {
-            background: transparent;
-            border: none;
-            color: var(--text-secondary);
-            padding: 8px 12px;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-size: 14px;
-            font-weight: 500;
-        }
-
-        .lang-btn.active {
-            background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
-            color: #000;
-            transform: scale(1.05);
-        }
-
-        .lang-btn:hover:not(.active) {
-            background: var(--divider);
-            color: var(--text-primary);
-        }
-
-        /* Header Section */
-        .header {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            position: relative;
-            padding-top: 100px;
-            padding-bottom: 80px;
-            margin-bottom: 40px;
-        }
-
-        .profile-image {
-            width: 200px;
-            height: 200px;
-            margin: 0 auto 2rem;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 4px solid transparent;
-            background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
-            padding: 4px;
-            transition: all 0.3s ease;
-        }
-
-        .profile-image:hover {
-            transform: scale(1.05);
-            box-shadow: 0 20px 40px rgba(107, 242, 29, 0.3);
-        }
-
-        .profile-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
-            background: var(--bg-primary);
-        }
-
-        .hero-content h1 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            font-weight: 700;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero-content .role {
-            font-size: clamp(1.2rem, 3vw, 1.8rem);
-            font-weight: 500;
-            margin-bottom: 2rem;
-            color: var(--text-secondary);
-        }
-
-        .contact-info {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin-bottom: 2rem;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            color: var(--text-secondary);
-            text-decoration: none;
-            transition: all 0.3s ease;
-            padding: 8px 16px;
-            border-radius: 20px;
-        }
-
-        .contact-item:hover {
-            color: var(--accent-start);
-            background: var(--divider);
-            transform: translateY(-2px);
-        }
-
-        .social-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .social-btn {
-            padding: 12px 24px;
-            border: none;
-            border-radius: 25px;
-            font-weight: 600;
-            font-size: 14px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            white-space: nowrap;
-        }
-
-        .social-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-        }
-
-        .btn-instagram {
-            background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af);
-            color: white;
-        }
-
-        /* Section Styles */
-        .section {
-            padding: 80px 0;
-            position: relative;
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 3rem;
-            background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .section-divider {
-            height: 1px;
-            background: var(--divider);
-            margin: 80px 0;
-        }
-
-        /* Profile Section */
-        .profile-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-        }
-
-        /* Experience Timeline */
-        .timeline {
-            position: relative;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 50%;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background: linear-gradient(to bottom, var(--accent-start), var(--accent-end));
-            transform: translateX(-50%);
-        }
-
-        .timeline-item {
-            position: relative;
-            margin-bottom: 50px;
-            width: 50%;
-        }
-
-        .timeline-item:nth-child(odd) {
-            left: 0;
-            padding-right: 40px;
-            text-align: right;
-        }
-
-        .timeline-item:nth-child(even) {
-            left: 50%;
-            padding-left: 40px;
-        }
-
-        .timeline-content {
-            background: var(--glass-bg);
-            backdrop-filter: blur(10px);
-            border: 1px solid var(--divider);
-            border-radius: 15px;
-            padding: 25px;
-            transition: all 0.3s ease;
-        }
-
-        .timeline-content:hover {
-            transform: translateY(-5px);
-            border-color: var(--accent-start);
-        }
-
-        .timeline-content h3 {
-            margin-bottom: 10px;
-            color: var(--text-primary);
-        }
-
-        .timeline-period {
-            color: var(--accent-start);
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .timeline-content ul {
-            list-style: none;
-            padding: 0;
-            text-align: left;
-        }
-
-        .timeline-content li {
-            padding: 5px 0;
-            color: var(--text-secondary);
-            position: relative;
-            padding-left: 20px;
-        }
-
-        .timeline-content li::before {
-            content: '▹';
-            position: absolute;
-            left: 0;
-            color: var(--accent-start);
-        }
-
-        .timeline-dot {
-            position: absolute;
-            top: 20px;
-            width: 15px;
-            height: 15px;
-            background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
-            border-radius: 50%;
-            border: 3px solid var(--bg-primary);
-        }
-
-        .timeline-item:nth-child(odd) .timeline-dot {
-            right: -7px;
-        }
-
-        .timeline-item:nth-child(even) .timeline-dot {
-            left: -7px;
-        }
-
-        /* Skills Section */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-            margin-top: 3rem;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .skill-category:nth-child(3),
-        .skill-category:nth-child(4),
-        .skill-category:nth-child(5) {
-            grid-column: span 1;
-        }
-
-        .skill-category:nth-child(3) {
-            grid-column: 1 / 2;
-        }
-
-        .skill-category:nth-child(4) {
-            grid-column: 2 / 3;
-        }
-
-        .skill-category:nth-child(5) {
-            grid-column: 1 / 3;
-            max-width: 400px;
-            margin: 0 auto;
-            width: 100%;
-        }
-
-        .skill-category {
-            background: var(--glass-bg);
-            backdrop-filter: blur(10px);
-            border: 1px solid var(--divider);
-            border-radius: 15px;
-            padding: 25px;
-            transition: all 0.3s ease;
-        }
-
-        .skill-category:hover {
-            transform: translateY(-5px);
-            border-color: var(--accent-start);
-        }
-
-        .skill-category h3 {
-            font-size: 1.3rem;
-            margin-bottom: 15px;
-            color: var(--accent-start);
-        }
-
-        .skill-pills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .skill-pill {
-            background: var(--divider);
-            color: var(--text-primary);
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .skill-pill:hover {
-            background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
-            color: #000;
-            transform: scale(1.05);
-        }
-
-        /* Languages Section */
-        .languages-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            margin-top: 2rem;
-            max-width: 1000px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .language-item {
-            background: var(--glass-bg);
-            backdrop-filter: blur(10px);
-            border: 1px solid var(--divider);
-            border-radius: 15px;
-            padding: 20px;
-            transition: all 0.3s ease;
-        }
-
-        .language-item:hover {
-            transform: translateY(-3px);
-            border-color: var(--accent-start);
-        }
-
-        .language-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-
-        .language-bar {
-            height: 8px;
-            background: var(--divider);
-            border-radius: 4px;
-            overflow: hidden;
-        }
-
-        .language-progress {
-            height: 100%;
-            background: linear-gradient(90deg, var(--accent-start), var(--accent-end));
-            border-radius: 4px;
-            transition: width 1s ease;
-        }
-
-        /* Achievements Section */
-        .achievements-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-            margin-top: 3rem;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .achievement-card {
-            background: var(--glass-bg);
-            backdrop-filter: blur(10px);
-            border: 1px solid var(--divider);
-            border-radius: 15px;
-            padding: 30px;
-            text-align: center;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .achievement-card:hover {
-            transform: translateY(-10px) scale(1.02);
-            border-color: var(--accent-start);
-            box-shadow: 0 20px 40px rgba(107, 242, 29, 0.1);
-        }
-
-        .achievement-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .achievement-card h3 {
-            margin-bottom: 10px;
-            color: var(--text-primary);
-        }
-
-        .achievement-card p {
-            color: var(--text-secondary);
-        }
-
-        /* Footer */
-        .footer {
-            padding: 60px 0;
-            text-align: center;
-            border-top: 1px solid var(--divider);
-        }
-
-        .download-btn {
-            background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
-            color: #000;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 25px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-            margin-bottom: 2rem;
-        }
-
-        .download-btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 30px rgba(107, 242, 29, 0.3);
-        }
-
-        /* Responsive Design */
-        @media (max-width: 1024px) {
-            .nav-container {
-                padding: 0 15px;
-            }
-
-            .section {
-                padding: 60px 0;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .nav {
-                padding: 10px 0;
-            }
-
-            .nav-container {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            .nav-links {
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 10px;
-            }
-
-            .nav-link {
-                padding: 6px 12px;
-                font-size: 14px;
-            }
-
-            .lang-selector {
-                margin: 0;
-            }
-
-            .lang-btn {
-                padding: 6px 10px;
-                font-size: 12px;
-            }
-
-            .theme-toggle {
-                padding: 6px 12px;
-                font-size: 14px;
-            }
-
-            .header {
-                min-height: 100vh;
-                padding-top: 200px;
-                padding-bottom: 80px;
-                margin-bottom: 0;
-            }
-
-            .profile-image {
-                width: 150px;
-                height: 150px;
-                margin-bottom: 2rem;
-            }
-
-            .hero-content h1 {
-                font-size: 2rem;
-                margin-bottom: 1.5rem;
-            }
-
-            .hero-content .role {
-                font-size: 1.2rem;
-                margin-bottom: 2.5rem;
-            }
-
-            .contact-info {
-                flex-direction: column;
-                align-items: center;
-                gap: 15px;
-                margin-bottom: 2.5rem;
-            }
-
-            .contact-item {
-                padding: 6px 12px;
-                font-size: 14px;
-                width: 100%;
-                max-width: 300px;
-                justify-content: center;
-            }
-
-            .social-buttons {
-                flex-direction: column;
-                width: 100%;
-                max-width: 300px;
-                margin: 2rem auto 0;
-                gap: 12px;
-            }
-
-            .social-btn {
-                width: 100%;
-                justify-content: center;
-                padding: 12px 20px;
-            }
-
-            .section {
-                padding: 60px 0;
-            }
-
-            .section-title {
-                font-size: 1.8rem;
-                margin-bottom: 2.5rem;
-            }
-
-            .section-divider {
-                margin: 60px 0;
-            }
-
-            .profile-content {
-                font-size: 1rem;
-                padding: 0 10px;
-                line-height: 1.8;
-            }
-
-            .timeline::before {
-                left: 20px;
-            }
-
-            .timeline-item {
-                width: 100%;
-                left: 0 !important;
-                padding-left: 50px !important;
-                padding-right: 0 !important;
-                text-align: left !important;
-                margin-bottom: 40px;
-            }
-
-            .timeline-content {
-                padding: 25px;
-            }
-
-            .timeline-content h3 {
-                font-size: 1.2rem;
-                margin-bottom: 12px;
-            }
-
-            .timeline-content ul {
-                text-align: left;
-                margin-top: 10px;
-            }
-
-            .timeline-content li {
-                font-size: 0.95rem;
-                padding: 8px 0;
-                line-height: 1.6;
-            }
-
-            .timeline-dot {
-                left: 13px !important;
-                right: auto !important;
-            }
-
-            .skills-grid {
-                grid-template-columns: 1fr;
-                gap: 25px;
-            }
+        :root{--bg-primary:#000000;--text-primary:#ffffff;--text-secondary:#ffffff80;--accent-start:#6bf21d;--accent-end:#00ffe1;--glass-bg:#111111cc;--divider:#ffffff20;--hover-scale:1.05}
+        body.light-mode{--bg-primary:#ffffff;--text-primary:#000000;--text-secondary:#00000080;--glass-bg:#f8f9facc;--divider:#00000020}
+        body.light-mode .matrix-bg{opacity:0.05}
+        body.light-mode .matrix-line{background:linear-gradient(to bottom,transparent,#333333,transparent)}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Inter',sans-serif;background:var(--bg-primary);color:var(--text-primary);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px}
+        .matrix-bg{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:-1;opacity:0.1}
+        .matrix-line{position:absolute;width:2px;height:100px;background:linear-gradient(to bottom,transparent,var(--accent-start),transparent);animation:matrix-fall 8s linear infinite}
+        @keyframes matrix-fall{0%{transform:translateY(-100px);opacity:0}10%{opacity:1}90%{opacity:1}100%{transform:translateY(100vh);opacity:0}}
+        .nav{position:fixed;top:0;left:0;right:0;z-index:999;background:var(--glass-bg);backdrop-filter:blur(10px);border-bottom:1px solid var(--divider);padding:15px 0}
+        .nav-container{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+        .nav-links{display:flex;gap:20px;flex-wrap:wrap}
+        .nav-link{color:var(--text-secondary);text-decoration:none;padding:8px 16px;border-radius:20px;transition:all 0.3s ease;font-weight:500;display:inline-block;white-space:nowrap}
+        .nav-link:hover{background:var(--divider);color:var(--text-primary)}
+        .theme-toggle{background:transparent;border:1px solid var(--divider);border-radius:25px;padding:8px 16px;cursor:pointer;transition:all 0.3s ease;display:flex;align-items:center;gap:8px;color:var(--text-secondary)}
+        .theme-toggle:hover{background:var(--divider);color:var(--text-primary)}
+        .lang-selector{display:flex;gap:8px;background:var(--glass-bg);backdrop-filter:blur(10px);border-radius:25px;padding:8px;border:1px solid var(--divider)}
+        .lang-btn{background:transparent;border:none;color:var(--text-secondary);padding:8px 12px;border-radius:20px;cursor:pointer;transition:all 0.3s ease;font-size:14px;font-weight:500}
+        .lang-btn.active{background:linear-gradient(135deg,var(--accent-start),var(--accent-end));color:#000;transform:scale(1.05)}
+        .lang-btn:hover:not(.active){background:var(--divider);color:var(--text-primary)}
+        .header{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;padding-top:100px;padding-bottom:80px;margin-bottom:40px}
+        .profile-image{width:200px;height:200px;margin:0 auto 2rem;border-radius:50%;overflow:hidden;border:4px solid transparent;background:linear-gradient(135deg,var(--accent-start),var(--accent-end));padding:4px;transition:all 0.3s ease}
+        .profile-image:hover{transform:scale(1.05);box-shadow:0 20px 40px rgba(107,242,29,0.3)}
+        .profile-image img{width:100%;height:100%;object-fit:cover;border-radius:50%;background:var(--bg-primary)}
+        .hero-content h1{font-size:clamp(2.5rem,5vw,4rem);font-weight:700;margin-bottom:1rem;background:linear-gradient(135deg,var(--accent-start),var(--accent-end));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .hero-content .role{font-size:clamp(1.2rem,3vw,1.8rem);font-weight:500;margin-bottom:2rem;color:var(--text-secondary)}
+        .contact-info{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;margin-bottom:2rem}
+        .contact-item{display:flex;align-items:center;gap:8px;color:var(--text-secondary);text-decoration:none;transition:all 0.3s ease;padding:8px 16px;border-radius:20px}
+        .contact-item:hover{color:var(--accent-start);background:var(--divider);transform:translateY(-2px)}
+        .social-buttons{display:flex;justify-content:center;gap:15px;margin-top:2rem;flex-wrap:wrap}
+        .social-btn{padding:12px 24px;border:none;border-radius:25px;font-weight:600;font-size:14px;cursor:pointer;transition:all 0.3s ease;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap}
+        .social-btn:hover{transform:translateY(-3px);box-shadow:0 10px 25px rgba(0,0,0,0.2)}
+        .btn-instagram{background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af);color:white}
+        .section{padding:80px 0;position:relative}
+        .section-title{font-size:2.5rem;font-weight:700;text-align:center;margin-bottom:3rem;background:linear-gradient(135deg,var(--accent-start),var(--accent-end));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .section-divider{height:1px;background:var(--divider);margin:80px 0}
+        .profile-content{max-width:800px;margin:0 auto;text-align:center;font-size:1.1rem;line-height:1.8;color:var(--text-secondary)}
+        .timeline{position:relative;max-width:900px;margin:0 auto}
+        .timeline::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--accent-start),var(--accent-end));transform:translateX(-50%)}
+        .timeline-item{position:relative;margin-bottom:50px;width:50%}
+        .timeline-item:nth-child(odd){left:0;padding-right:40px;text-align:right}
+        .timeline-item:nth-child(even){left:50%;padding-left:40px}
+        .timeline-content{background:var(--glass-bg);backdrop-filter:blur(10px);border:1px solid var(--divider);border-radius:15px;padding:25px;transition:all 0.3s ease}
+        .timeline-content:hover{transform:translateY(-5px);border-color:var(--accent-start)}
+        .timeline-content h3{margin-bottom:10px;color:var(--text-primary)}
+        .timeline-period{color:var(--accent-start);margin-bottom:15px;display:block}
+        .timeline-content ul{list-style:none;padding:0;text-align:left}
+        .timeline-content li{padding:5px 0;color:var(--text-secondary);position:relative;padding-left:20px}
+        .timeline-content li::before{content:'▹';position:absolute;left:0;color:var(--accent-start)}
+        .timeline-dot{position:absolute;top:20px;width:15px;height:15px;background:linear-gradient(135deg,var(--accent-start),var(--accent-end));border-radius:50%;border:3px solid var(--bg-primary)}
+        .timeline-item:nth-child(odd) .timeline-dot{right:-7px}
+        .timeline-item:nth-child(even) .timeline-dot{left:-7px}
+        .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:30px;margin-top:3rem;max-width:800px;margin-left:auto;margin-right:auto}
+        .skill-category:nth-child(5){grid-column:1/3;max-width:400px;margin:0 auto;width:100%}
+        .skill-category{background:var(--glass-bg);backdrop-filter:blur(10px);border:1px solid var(--divider);border-radius:15px;padding:25px;transition:all 0.3s ease}
+        .skill-category:hover{transform:translateY(-5px);border-color:var(--accent-start)}
+        .skill-category h3{font-size:1.3rem;margin-bottom:15px;color:var(--accent-start)}
+        .skill-pills{display:flex;flex-wrap:wrap;gap:10px}
+        .skill-pill{background:var(--divider);color:var(--text-primary);padding:8px 15px;border-radius:20px;font-size:0.9rem;transition:all 0.3s ease;cursor:pointer}
+        .skill-pill:hover{background:linear-gradient(135deg,var(--accent-start),var(--accent-end));color:#000;transform:scale(1.05)}
+        .languages-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:2rem;max-width:1000px;margin-left:auto;margin-right:auto}
+        .language-item{background:var(--glass-bg);backdrop-filter:blur(10px);border:1px solid var(--divider);border-radius:15px;padding:20px;transition:all 0.3s ease}
+        .language-item:hover{transform:translateY(-3px);border-color:var(--accent-start)}
+        .language-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+        .language-bar{height:8px;background:var(--divider);border-radius:4px;overflow:hidden}
+        .language-progress{height:100%;background:linear-gradient(90deg,var(--accent-start),var(--accent-end));border-radius:4px;transition:width 1s ease}
+        .achievements-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:30px;margin-top:3rem;max-width:900px;margin-left:auto;margin-right:auto}
+        .achievement-card{background:var(--glass-bg);backdrop-filter:blur(10px);border:1px solid var(--divider);border-radius:15px;padding:30px;text-align:center;transition:all 0.3s ease;cursor:pointer}
+        .achievement-card:hover{transform:translateY(-10px) scale(1.02);border-color:var(--accent-start);box-shadow:0 20px 40px rgba(107,242,29,0.1)}
+        .achievement-icon{font-size:3rem;margin-bottom:1rem}
+        .achievement-card h3{margin-bottom:10px;color:var(--text-primary)}
+        .achievement-card p{color:var(--text-secondary)}
+        .footer{padding:60px 0;text-align:center;border-top:1px solid var(--divider)}
+        .download-btn{background:linear-gradient(135deg,var(--accent-start),var(--accent-end));color:#000;padding:15px 30px;border:none;border-radius:25px;font-size:1.1rem;font-weight:600;cursor:pointer;transition:all 0.3s ease;text-decoration:none;display:inline-block;margin-bottom:2rem}
+        .download-btn:hover{transform:scale(1.05);box-shadow:0 10px 30px rgba(107,242,29,0.3)}
+        img{max-width:100%;height:auto}
+        @keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+        .fade-in{animation:fadeInUp 0.6s ease forwards}
+        html{scroll-behavior:smooth;scroll-padding-top:80px}
+        
+        /* MÓVIL OPTIMIZADO - Correcciones críticas */
+        @media (max-width:768px){
+            .container{padding:0 20px}
+            .nav{padding:10px 0}
+            .nav-container{flex-direction:column;gap:10px;padding:0 15px}
+            .nav-links{justify-content:center;gap:10px}
+            .nav-link{padding:6px 12px;font-size:14px}
+            .lang-btn{padding:6px 10px;font-size:12px}
+            .theme-toggle{padding:6px 12px;font-size:14px}
+            .header{min-height:100vh;padding-top:200px;padding-bottom:80px;margin-bottom:0}
+            .profile-image{width:150px;height:150px;margin-bottom:2rem}
+            .hero-content h1{font-size:2rem;margin-bottom:1.5rem}
+            .hero-content .role{font-size:1.2rem;margin-bottom:2.5rem}
+            .contact-info{flex-direction:column;align-items:center;gap:15px;margin-bottom:2.5rem}
+            .contact-item{padding:6px 12px;font-size:14px;width:100%;max-width:300px;justify-content:center}
+            .social-buttons{flex-direction:column;width:100%;max-width:300px;margin:2rem auto 0;gap:12px}
+            .social-btn{width:100%;justify-content:center;padding:12px 20px}
+            .section{padding:60px 0}
+            .section-title{font-size:1.8rem;margin-bottom:2.5rem}
+            .section-divider{margin:60px 0}
+            .profile-content{font-size:1rem;padding:0 10px;line-height:1.8}
             
-            .skill-category:nth-child(3),
-            .skill-category:nth-child(4),
-            .skill-category:nth-child(5) {
-                grid-column: 1 / -1;
-                max-width: 100%;
-            }
-
-            .skill-category {
-                padding: 25px;
-            }
-
-            .skill-category h3 {
-                font-size: 1.2rem;
-                margin-bottom: 18px;
-            }
-
-            .skill-pill {
-                font-size: 0.9rem;
-                padding: 8px 14px;
-            }
-
-            .languages-grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-
-            .language-item {
-                padding: 20px;
-            }
-
-            .achievements-grid {
-                grid-template-columns: 1fr;
-                gap: 25px;
-            }
-
-            .achievement-card {
-                padding: 30px;
-            }
-
-            .achievement-icon {
-                font-size: 2.8rem;
-                margin-bottom: 1.2rem;
-            }
-
-            .achievement-card h3 {
-                font-size: 1.1rem;
-                margin-bottom: 12px;
-            }
-
-            .achievement-card p {
-                font-size: 0.95rem;
-                line-height: 1.6;
-            }
-
-            .footer {
-                padding: 50px 0;
-            }
-
-            .download-btn {
-                padding: 14px 28px;
-                font-size: 1rem;
-                width: 100%;
-                max-width: 300px;
-                margin-bottom: 2.5rem;
-            }
+            /* TIMELINE MÓVIL - CORRECCIÓN CRÍTICA */
+            .timeline{padding:0 15px}
+            .timeline::before{left:30px;width:2px}
+            .timeline-item{width:100%;left:0!important;padding-left:60px!important;padding-right:15px!important;text-align:left!important;margin-bottom:40px}
+            .timeline-content{padding:20px;border-radius:12px}
+            .timeline-content h3{font-size:1.15rem;margin-bottom:12px}
+            .timeline-content ul{text-align:left;margin-top:10px}
+            .timeline-content li{font-size:0.9rem;padding:6px 0;line-height:1.5;padding-left:15px}
+            .timeline-content li::before{font-size:14px}
+            .timeline-dot{left:23px!important;right:auto!important;width:14px;height:14px}
+            
+            .skills-grid{grid-template-columns:1fr;gap:25px}
+            .skill-category:nth-child(5){grid-column:1/-1;max-width:100%}
+            .skill-category{padding:25px}
+            .skill-category h3{font-size:1.2rem;margin-bottom:18px}
+            .skill-pill{font-size:0.85rem;padding:7px 13px}
+            .languages-grid{grid-template-columns:1fr;gap:20px}
+            .language-item{padding:20px}
+            .achievements-grid{grid-template-columns:1fr;gap:25px}
+            .achievement-card{padding:30px}
+            .achievement-icon{font-size:2.8rem;margin-bottom:1.2rem}
+            .achievement-card h3{font-size:1.1rem;margin-bottom:12px}
+            .achievement-card p{font-size:0.9rem;line-height:1.6}
+            .footer{padding:50px 0}
+            .download-btn{padding:14px 28px;font-size:1rem;width:100%;max-width:300px;margin-bottom:2.5rem}
+            html{scroll-padding-top:150px}
         }
-
-        @media (max-width: 480px) {
-            .header {
-                padding-top: 220px;
-            }
-
-            .hero-content h1 {
-                font-size: 1.8rem;
-                margin-bottom: 1.5rem;
-            }
-
-            .hero-content .role {
-                font-size: 1rem;
-                margin-bottom: 2rem;
-            }
-
-            .profile-image {
-                width: 120px;
-                height: 120px;
-                margin-bottom: 2rem;
-            }
-
-            .section-title {
-                font-size: 1.6rem;
-                margin-bottom: 2rem;
-            }
-
-            .section {
-                padding: 50px 0;
-            }
-
-            .timeline-content h3 {
-                font-size: 1.1rem;
-            }
-
-            .timeline-content li {
-                font-size: 0.9rem;
-            }
-
-            .skill-category h3 {
-                font-size: 1.1rem;
-            }
-
-            .skill-pill {
-                font-size: 0.85rem;
-            }
-
-            .achievement-card h3 {
-                font-size: 1rem;
-            }
-
-            .achievement-card p {
-                font-size: 0.9rem;
-            }
-
-            .achievement-icon {
-                font-size: 2.5rem;
-            }
+        
+        @media (max-width:480px){
+            .container{padding:0 15px}
+            .header{padding-top:220px}
+            .hero-content h1{font-size:1.8rem;margin-bottom:1.5rem}
+            .hero-content .role{font-size:1rem;margin-bottom:2rem}
+            .profile-image{width:120px;height:120px;margin-bottom:2rem}
+            .section-title{font-size:1.6rem;margin-bottom:2rem}
+            .section{padding:50px 0}
+            .timeline{padding:0 10px}
+            .timeline::before{left:25px}
+            .timeline-item{padding-left:55px!important;padding-right:10px!important}
+            .timeline-dot{left:18px!important}
+            .timeline-content{padding:18px}
+            .timeline-content h3{font-size:1.05rem}
+            .timeline-content li{font-size:0.85rem;padding:5px 0;padding-left:12px}
+            .skill-category h3{font-size:1.1rem}
+            .skill-pill{font-size:0.8rem;padding:6px 11px}
+            .achievement-card h3{font-size:1rem}
+            .achievement-card p{font-size:0.85rem}
+            .achievement-icon{font-size:2.5rem}
         }
-
-        /* Ensure smooth scaling */
-        img {
-            max-width: 100%;
-            height: auto;
+        
+        @media (max-width:360px){
+            .nav-link{padding:5px 10px;font-size:12px}
+            .lang-btn{padding:5px 8px;font-size:11px}
+            .header{padding-top:230px}
+            .profile-image{width:110px;height:110px}
+            .hero-content h1{font-size:1.6rem}
+            .contact-item{font-size:13px}
+            .timeline{padding:0 5px}
+            .timeline::before{left:20px}
+            .timeline-item{padding-left:50px!important;padding-right:5px!important}
+            .timeline-dot{left:13px!important;width:12px;height:12px}
         }
-
-        /* Fix for very small screens */
-        @media (max-width: 360px) {
-            .container {
-                padding: 0 15px;
-            }
-
-            .nav-link {
-                padding: 5px 10px;
-                font-size: 12px;
-            }
-
-            .lang-btn {
-                padding: 5px 8px;
-                font-size: 11px;
-            }
-
-            .header {
-                padding-top: 230px;
-            }
-
-            .profile-image {
-                width: 110px;
-                height: 110px;
-            }
-
-            .hero-content h1 {
-                font-size: 1.6rem;
-            }
-
-            .contact-item {
-                font-size: 13px;
-            }
-        }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .fade-in {
-            animation: fadeInUp 0.6s ease forwards;
-        }
-
-        /* Smooth scrolling */
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 80px;
-        }
-
-        @media (max-width: 768px) {
-            html {
-                scroll-padding-top: 150px;
-            }
+        
+        @media (min-width:1024px){
+            .nav-container{padding:0 15px}
+            .section{padding:60px 0}
+            .section-title{font-size:2rem}
         }
     </style>
 </head>
 <body>
-    <!-- Matrix Background -->
     <div class="matrix-bg" id="matrixBg"></div>
-
-    <!-- Navigation -->
+    
     <nav class="nav">
         <div class="nav-container">
             <div class="nav-links">
@@ -1014,7 +202,7 @@
                 <a href="https://businessbotspage.web.app" class="nav-link" data-key="nav_nfc">Tarjetas NFC</a>
                 <a href="https://wa.me/34644075065" class="nav-link" data-key="nav_contact">Contacto</a>
             </div>
-            <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+            <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
                 <div class="lang-selector">
                     <button class="lang-btn active" onclick="switchLanguage('es')" data-lang="es">ES</button>
                     <button class="lang-btn" onclick="switchLanguage('en')" data-lang="en">EN</button>
@@ -1030,7 +218,6 @@
         </div>
     </nav>
 
-    <!-- Header Section -->
     <header class="header">
         <div class="container">
             <div class="hero-content">
@@ -1040,8 +227,8 @@
                 <h1 data-key="name">Elias J Perez</h1>
                 <p class="role" data-key="role">Consultor IA & Diseñador</p>
                 <div class="contact-info">
-                    <a href="/cdn-cgi/l/email-protection#177275747b7e7e747c6457707a767e7b3974787a" class="contact-item">
-                        <span><span class="__cf_email__" data-cfemail="731611101f1a1a10180033141e121a1f5d101c1e">[email&#160;protected]</span></span>
+                    <a href="mailto:ebcliicks@gmail.com" class="contact-item">
+                        <span>ebcliicks@gmail.com</span>
                     </a>
                     <a href="https://wa.me/34644075065" class="contact-item" target="_blank" rel="noopener">
                         <span>+34 644 075 065</span>
@@ -1054,35 +241,26 @@
                     </a>
                 </div>
                 <div class="social-buttons">
-                    <a href="https://instagram.com/imtimeless" target="_blank" rel="noopener" class="social-btn btn-instagram">
-                        Instagram - Timeless
-                    </a>
-                    <a href="https://www.instagram.com/eliasburgzzz/?hl=en" target="_blank" rel="noopener" class="social-btn btn-instagram">
-                        Instagram - Elias
-                    </a>
+                    <a href="https://instagram.com/imtimeless" target="_blank" rel="noopener" class="social-btn btn-instagram">Instagram - Timeless</a>
+                    <a href="https://www.instagram.com/eliasburgzzz/?hl=en" target="_blank" rel="noopener" class="social-btn btn-instagram">Instagram - Elias</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Spacing Element -->
-    <div style="height: 100px;"></div>
+    <div style="height:100px"></div>
 
-    <!-- Profile Section -->
-    <section class="section" style="padding-top: 120px;">
+    <section class="section" style="padding-top:120px">
         <div class="container">
             <h2 class="section-title" data-key="profile_title">Resumen Profesional</h2>
             <div class="profile-content">
-                <p data-key="profile_text">
-                    Fundador y Director de Sistemas de IA de Business Bots Solutions, una agencia de consultoría y automatización impulsada por IA. Tecnólogo Creativo con 10 años de experiencia en diseño gráfico, 5 años trabajando con sistemas de IA, y 1 año liderando una agencia de IA.
-                </p>
+                <p data-key="profile_text">Fundador y Director de Sistemas de IA de Business Bots Solutions, una agencia de consultoría y automatización impulsada por IA. Tecnólogo Creativo con 10 años de experiencia en diseño gráfico, 5 años trabajando con sistemas de IA, y 1 año liderando una agencia de IA.</p>
             </div>
         </div>
     </section>
 
     <div class="section-divider"></div>
 
-    <!-- Experience Section -->
     <section class="section">
         <div class="container">
             <h2 class="section-title" data-key="experience_title">Experiencia Laboral</h2>
@@ -1145,7 +323,6 @@
 
     <div class="section-divider"></div>
 
-    <!-- Skills Section -->
     <section class="section">
         <div class="container">
             <h2 class="section-title" data-key="skills_title">Habilidades Profesionales</h2>
@@ -1209,7 +386,6 @@
 
     <div class="section-divider"></div>
 
-    <!-- Languages Section -->
     <section class="section">
         <div class="container">
             <h2 class="section-title" data-key="languages_title">Idiomas</h2>
@@ -1220,7 +396,7 @@
                         <span data-key="native">Nativo</span>
                     </div>
                     <div class="language-bar">
-                        <div class="language-progress" style="width: 100%"></div>
+                        <div class="language-progress" style="width:100%"></div>
                     </div>
                 </div>
                 <div class="language-item">
@@ -1229,7 +405,7 @@
                         <span data-key="advanced">Avanzado</span>
                     </div>
                     <div class="language-bar">
-                        <div class="language-progress" style="width: 85%"></div>
+                        <div class="language-progress" style="width:85%"></div>
                     </div>
                 </div>
                 <div class="language-item">
@@ -1238,7 +414,7 @@
                         <span data-key="native">Nativo</span>
                     </div>
                     <div class="language-bar">
-                        <div class="language-progress" style="width: 100%"></div>
+                        <div class="language-progress" style="width:100%"></div>
                     </div>
                 </div>
             </div>
@@ -1247,7 +423,6 @@
 
     <div class="section-divider"></div>
 
-    <!-- Achievements Section -->
     <section class="section">
         <div class="container">
             <h2 class="section-title" data-key="achievements_title">Historial de Logros</h2>
@@ -1276,12 +451,11 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <a href="https://wa.me/34644075065" target="_blank" rel="noopener" class="download-btn" data-key="contact_whatsapp">
-                Contactar por WhatsApp
-            </a>
+            <a href="https://wa.me/34644075065" target="_blank" rel="noopener" class="download-btn" data-key="contact_whatsapp">Contactar por WhatsApp</a>
             <p data-key="footer_text">© 2026 Elias J Perez. Todos los derechos reservados.</p>
         </div>
     </footer>
+</body>
+</html>
